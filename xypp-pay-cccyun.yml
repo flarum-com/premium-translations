@@ -36,6 +36,8 @@ xypp-pay-cccyun:
     pay-done: "Payment is done"
     pay-done-btn: "Go History Page"
   admin:
+    permissions:
+      can-pay: "Can Recharge"
     settings:
       pay-wxpay: "Enable WeChat Pay"
       pay-qqpay: "Enable QQ Pay"
