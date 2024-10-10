@@ -32,7 +32,8 @@ xypp-pay-cccyun:
       open_wechat: "If there's no payments is showing up, click here."
       back: "Back"
       done: "Done"
-      invalid-amount: "Invalid amount"
+      invalid-amount: "Invalid amount (between {min} and {max} is allowed)"
+      no-limit: "[any]"
     pay-done: "Payment is done"
     pay-done-btn: "Go History Page"
   admin:
