@@ -10,6 +10,7 @@ justoverclock-reputation-score:
     historyBestAnswerUnset: Reputation points decreased for unassigning a best answer.
     historyDiscussionCreated: Reputation points increased for starting a discussion.
     historyDiscussionClosed: Reputation points decreased because your thread was closed.
+    historyFlagCreated: Increased reputation points for reporting a user.
     settings:
       maxPoints: Maximum reputation points
       maxPointsHelp: Insert the number of the maximum allowed reputation points, e.g. "1000"
@@ -21,6 +22,8 @@ justoverclock-reputation-score:
       likePointsHelp: Insert the number of point that a user earn for receiving a like
       postPoints: Points for post created
       postPointsHelp: Insert the number of point that a user earn for creating a new post (points are multiplied based on the post length)
+      flagPoints: Points for report post
+      flagPointsHelp: Insert the number of points that a user earn for reporting posts
 
   forum:
     reputation: Reputation
@@ -34,3 +37,29 @@ justoverclock-reputation-score:
     totalPosts: Total Posts
     reputationHistory: Reputation History
     reputationHistoryPageTitle: This timeline displays the latest 15 events that impacted your reputation.
+    firstLoginModalContent: |
+      <p>
+          This forum use a dynamic reputation system to encourage positive engagement within the community.
+          As a user, you can earn reputation points by contributing meaningfully to discussions and interactions, such as:
+          <ul>
+            <li>
+              Creating new discussions: Share your thoughts and ideas with the community.
+            </li>
+            <li>
+              Replying to posts: Earn points based on the quality of your responses.
+            </li>
+            <li>
+              Reporting users: Help maintain a healthy environment by reporting inappropriate behavior.
+            </li>
+            <li>
+              Receiving likes: Show appreciation to others' posts and get rewarded in return.
+            </li>
+            <li>
+              Writing best answers: earn points by contributing answers that solve a problem and are chosen as the "best answer"
+            </li>
+          </ul>
+        </p>
+        <p>
+          Earn reputation points by acting positively, helping others, and contributing to the community. Your actions
+          speak louder, and with each point, you gain recognition for your efforts. Keep engaging and build your reputation!
+        </p>
