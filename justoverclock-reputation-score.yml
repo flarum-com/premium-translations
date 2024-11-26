@@ -1,5 +1,12 @@
 justoverclock-reputation-score:
   admin:
+    tagMinimumReputationLabel: Minimum reputation restriction
+    tagMinimumReputationLabelHelp: Define the minimum reputation points to create and reply to a thread.
+    resetRewardsButton: Reset all users rewards
+    resetRewardsButtonHelp: This action is irreversible! By clicking this button all the information stored inside the reward column will be erased and recalculated automatically at the first user interaction.
+    resetRewardDisclaimer: This action should only be used when there are extension updates that change translations or the internal reputation point allocation logic!
+    resetRewardsSuccess: All rewards erased successfully
+    resetRewardsError: An error occurred after trying to reset all rewards fields
     oneYearSeniority: 1+ year of seniority
     threeYearSeniority: 3+ years of seniority
     fiveYearSeniority: 5+ years of seniority
@@ -63,6 +70,7 @@ justoverclock-reputation-score:
         </span>
 
   forum:
+    notEnoughReputationMessage: You don't have enough reputation points to reply to this thread...
     emptyReputationHistory: No history found for this user...
     reputation: Reputation
     reputationBar: Reputation Points
@@ -76,6 +84,8 @@ justoverclock-reputation-score:
     reputationHistory: Reputation History
     reputationHistoryPageTitle: This timeline displays the latest 15 events that impacted your reputation.
     xPostsReached: '{count} reached reward!'
+    tagReputationWarning: 'To be able to reply or create threads you need to have at least {count} reputation points!'
+    tagReputationWarningTitle: Warning!
     firstLoginModalContent: |
       <p>
           This forum use a dynamic reputation system to encourage positive engagement within the community.
