@@ -17,7 +17,7 @@ kilowhat-wordpress:
                 It will also be used as the owner of discussions and posts unless "Assign discussion author from SSO" is enabled.
             report_http_errors: Send WordPress REST API HTTP errors to configured Flarum reporters
             report_http_errors_help: >
-                No matter the value of this setting, requests as always logged as text to the default logger.
+                No matter the value of this setting, requests are always logged as text to the default logger.
                 This option is useful if you want API errors to be sent to Sentry or other monitoring tools as exceptions with stack traces.
             # SSO
             section_sso_intro: >
