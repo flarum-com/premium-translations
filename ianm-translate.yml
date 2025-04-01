@@ -123,6 +123,8 @@ ianm-translate:
         source-language:
           help: When disabled, only translatable content written in a language other than the current forum language will be labelled. To label all content with it's detected language, enable this setting.
           label: Always show language
+    composer_edit:
+      language: Update translated content in {language}
   lib:
     providers:
       deepl: DeepL
