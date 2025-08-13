@@ -176,8 +176,7 @@ kilowhat-formulaire:
                     user: Show in sign up
                 require-submission:
                     switch: Require submission to use forum
-                    reset: Reset known submissions
-                    warning: After you save, users who previously submitted this form will be required to submit it again before accessing the forum. Continue ?
+                    warning: After saving, any user with an incomplete form will be locked out of the forum until they resubmit. Continue?
                 automatic-discussion: Automatically create discussions from form submission
                 automatic-discussion-help: >
                     When enabled, the form will continue to be accessible like a standalone form.
