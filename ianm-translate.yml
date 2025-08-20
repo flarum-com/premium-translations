@@ -114,9 +114,6 @@ ianm-translate:
         title: Manage Poll translations
         question: Question
         question-language: Poll question ({language})
-      poll-group:
-        title: Manage Poll Group translations
-        name: Group name
       save-changes: => core.ref.save_changes
       quiz:
         title: Manage Quiz translations
