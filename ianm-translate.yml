@@ -91,6 +91,8 @@ ianm-translate:
       readme-none: No additional settings are required for this driver.
 
   forum:
+    post:
+      translation-error: "There was a problem displaying the translation of this post. The error has been logged with ID {uuid}. Please report this if the problem persists."
     unknown-language: "[not detected]"
     detected-language: "This post is in {postLang}"
     translate-button-label: Translate
