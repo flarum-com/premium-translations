@@ -262,6 +262,7 @@ kilowhat-formulaire:
             regex: Regular expression
             mime: MIME type (comma separated, accepts wildcard as second part)
             other: Allow "other" user value
+            defaultValue: Default value
             duplicate: Duplicate field
             delete: Delete field
             missing-title: Field with no title
@@ -282,6 +283,7 @@ kilowhat-formulaire:
                 title: Title
                 titleTranslationKey: (Expert) Translation key
                 key: (Expert) Unique Key
+                defaultValue: By default
             remove: Remove option
             new-placeholder: New option...
         items-editor:
