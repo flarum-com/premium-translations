@@ -3,9 +3,23 @@ ianm-translate:
     glossary:
       button: Glossary
       create_button: Create new term
+      refresh_button: Refresh
+      edit_term: Edit term
+      delete_term: Delete term
       section:
         heading: Glossary Configuration
         help: Glossary words or terms are defined so that the translation service will not translate them. This is useful for proper nouns, technical terms, or other words that should not be translated.
+      terms:
+        current: "{count, plural, one {# term} other {# terms}} currently defined"
+      no_terms: "No glossary terms are currently defined."
+      extender_info: "Glossary terms can be added using the extension's PHP extender in your extend.php file."
+      create_not_implemented: "Creating terms via UI is not yet implemented. Use the PHP extender."
+      edit_not_available: "This term is defined in code and cannot be edited via UI"
+      delete_not_available: "This term is defined in code and cannot be deleted via UI"
+      source:
+        code: "Defined in code"
+        database: "Stored in database"
+        default: "Built-in default"
     permission:
       refresh-translation: Force a re-translate of a cached translation
       translate-to-locale: View translation in current locale
@@ -75,6 +89,50 @@ ianm-translate:
         api_key:
           help: (optional) If your LibreTranslate server requires an API key, enter it here.
           label: => ianm-translate.lib.settings.api-key
+      openai:
+        api_key:
+          help: Register for an API key at {link}. This driver supports GPT-4o and GPT-4o-mini models.
+          label: => ianm-translate.lib.settings.api-key
+        translation_model:
+          help: Select which OpenAI model to use for translations. GPT-4o provides the highest quality, GPT-4o-mini offers good balance, and GPT-3.5-turbo is the most cost-effective.
+          label: Translation model
+          options:
+            gpt-4o: GPT-4o (Premium)
+            gpt-4o-mini: GPT-4o Mini (Balanced)
+            gpt-3.5-turbo: GPT-3.5 Turbo (Budget)
+            gpt-3.5-turbo-0125: GPT-3.5 Turbo Latest (Budget+)
+        detection_model:
+          help: Select which OpenAI model to use for language detection. GPT-3.5-turbo is recommended as language detection is a simple task that doesn't require the most powerful model.
+          label: Language detection model
+          options:
+            gpt-4o: GPT-4o (Premium)
+            gpt-4o-mini: GPT-4o Mini (Balanced)
+            gpt-3.5-turbo: GPT-3.5 Turbo (Budget)
+            gpt-3.5-turbo-0125: GPT-3.5 Turbo Latest (Budget+)
+        de_variant:
+          help: When translating to German, select which variant should be used.
+          label: German variant
+          options:
+            casual: Casual German
+            swiss: Swiss German
+        en_variant:
+          help: When translating to English, select which variant should be used.
+          label: English variant
+          options:
+            en-GB: British English
+            en-US: American English
+        max_tokens:
+          help: Maximum tokens for translation output. Higher values allow longer translations but increase costs. 1024 tokens ≈ 750 words. GPT-4o costs ~$0.03 per 1K output tokens, GPT-4o-mini costs ~$0.0006 per 1K output tokens.
+          label: Max output tokens
+          options:
+            1024: 1,024 tokens (~750 words)
+            2048: 2,048 tokens (~1,500 words)
+            4096: 4,096 tokens (~3,000 words)
+            6144: 6,144 tokens (~4,500 words)
+            8192: 8,192 tokens (~6,000 words)
+        timeout:
+          help: Request timeout in seconds. Increase if you experience timeout errors.
+          label: Timeout (seconds)
       translate-all-enabled: Enable all translation languages
       translate-all-help: When enabled, admin users and others with permission may translate content to any installed forum language.
       bind-browser-language: Add browser language
@@ -145,5 +203,6 @@ ianm-translate:
       google-free: Google Translate
       google-cloud: Google Cloud Translate
       libre: Libre Translate
+      openai: OpenAI
     settings:
       api-key: API Key
