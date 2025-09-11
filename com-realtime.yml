@@ -1,4 +1,4 @@
-flarum-com-realtime:
+blomstra-realtime:
     forum:
         push:
             discussion-list-new-activity: "{count, plural, one {Show # updated discussion} other {Show # updated discussions}}"
