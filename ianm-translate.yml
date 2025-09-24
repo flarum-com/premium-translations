@@ -34,8 +34,6 @@ ianm-translate:
         help: These settings control the behavior of the translation system with respect to search engine optimization.
         default-lang: Match forum default language
         default-lang-help: When enabled, the forum default language will be added to the path for the <code>x-default</code> hreflang tag.
-        canonical-path: Canonical path
-        canonical-path-help: When enabled, the canonical path will include the forum default language.
       providers:
         heading: Translation Provider Settings
         help: Select your preferred translation provider and configure its settings here.
