@@ -73,10 +73,6 @@ ianm-translate:
           pair:
             label: "{source} to {target} Glossary"
             help: "Select a glossary when translating {source} to {target}, or select none if no glossary is needed for this language pair."
-      google-cloud:
-        api_key:
-          help: Register for an API key at {link}. This driver uses the V2 API - Basic.
-          label: => ianm-translate.lib.settings.api-key
       openai:
         api_key:
           help: Register for an API key at {link}. This driver supports GPT-4o and GPT-4o-mini models.
@@ -192,7 +188,6 @@ ianm-translate:
     providers:
       deepl: DeepL
       google-free: Google Translate
-      google-cloud: Google Cloud Translate
       openai: OpenAI
     settings:
       api-key: API Key
