@@ -30,6 +30,7 @@ floxum-payments:
                 unlock them by completing payment through our payment provider
                 Stripe.
         pay-to-post:
+            composer-notice: Discussions posted here require payment before they become publicly visible.
             purchase-control: Pay to Publish
             purchase: Purchase to Publish
             purchase_required: >
@@ -64,6 +65,8 @@ floxum-payments:
             options: options
             purchase: purchase
             subscribed: subscribed
+            empty: No premium access has been configured yet.
+            empty-admin: Configure groups with a Stripe product ID in Admin → Permissions to enable paid access.
         nav:
             access_portal: Access portal
             user_subscriptions: Subscriptions
@@ -117,7 +120,7 @@ floxum-payments:
             pk: Publishable (api) key
             sk: Secret (api) key
             webhook-secret: Webhook signing secret
-            link-access-portal: Link access portal under user session dropdown
+            link-access-portal: Link access portal under "All Discussions"
             link-to-terms: Payment Terms URL
             recount-total-discussion-bounties: Recount total discussion bounties
             delete-subscriptions-on-user-delete: Delete subscriptions when user account deleted
