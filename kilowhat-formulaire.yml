@@ -63,6 +63,13 @@ kilowhat-formulaire:
                 This setting affects both notification emails and automatic discussion creation.
             replacementPatternLocaleOptions:
                 auto: Auto
+            actionLinkCacheOnFormChange: Cache behavior when discussion or user form is modified
+            actionLinkCacheOnFormChangeOptions:
+                clear: Clear cache immediately, rebuild later
+                nothing: Do nothing, cache will require manual rebuild
+                rebuild: Rebuild cache immediately - do not use on large communities!
+            bypassLinkCache: Bypass discussion and user submission cache
+            bypassLinkCacheHelp: Only for debugging or extension conflict.
 
     forum:
         nav:
