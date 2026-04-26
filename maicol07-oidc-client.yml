@@ -58,6 +58,6 @@ maicol07-oidc-client:
   forum:
     buttons:
       manage_account: Manage account
-      login: Login to {name}
+      login: Login with {name}
       connect_account: Connect to {name}
       disconnect_account: Disconnect from {name}
