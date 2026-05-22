@@ -371,6 +371,7 @@ ramon-marketplace:
         stripe_failed: "Payment failed to start."
         mixed_cart: "Subscriptions and one-time products can't be checked out together. Complete one at a time."
         login_required_for_subscription: "You must be logged in to subscribe."
+        login_required: "Sign in or create an account to check out digital or service products."
         missing_stripe_price: "Product is missing a Stripe Price. Contact the admin."
         already_owned: "You already own one or more items in this order."
         already_owned_list: "You already own: {items}"
@@ -1697,6 +1698,12 @@ ramon-marketplace:
       private_no_access: "One or more items in your cart became private. They were removed; please review and try again."
       type_disabled: "One or more product types in your cart are no longer for sale."
       pool_insufficient: "Not enough stock available for one of the tickets in your cart."
+      physical_disabled: "Sales of physical products are currently disabled."
+      digital_disabled: "Sales of digital products are currently disabled."
+      pool_disabled: "Sales of pool tickets are currently disabled."
+      composer_disabled: "Sales of Composer packages are currently disabled."
+      insufficient_stock: "Not enough stock for the requested quantity."
+      cart_item_not_found: "That cart item no longer exists."
 
       missing_field: "Please fill in the required billing information."
       missing_activation_field: "Please fill in the required activation fields."
@@ -1705,6 +1712,7 @@ ramon-marketplace:
       purchase_required: "Purchase this product before continuing."
       login_required_for_coupon: "Sign in to use this coupon."
       login_required_for_subscription: "Sign in to subscribe."
+      login_required: "Sign in or create an account to complete this purchase."
 
       coupon_invalid_code: "Invalid coupon code."
       coupon_not_found: "Coupon not found."
