@@ -1,0 +1,289 @@
+ernestdefoe-page-builder:
+  forum:
+    loading: Loading…
+    not_found: This content could not be found.
+    edit_layout: Edit layout
+    markdown_placeholder: Write your content…
+
+    record_list:
+      new_button: "New {name}"
+      empty: "No {plural} yet."
+      all_categories: All
+      previous: Previous
+      next: Next
+      page_of: "Page {page} of {total}"
+      views: "{count} views"
+      view: "{count} view"
+
+    editor:
+      new_title: "New {name}"
+      edit_title: "Edit {name}"
+      title_label: Title
+      untitled: Untitled
+      category_label: Category
+      category_none: — None —
+      status_label: Status
+      status_draft: Draft
+      status_pending: Pending review
+      status_published: Published
+      save_changes: Save changes
+      publish: Publish
+      cancel: Cancel
+      no_permission_edit: You don’t have permission to edit this.
+      no_permission_add: "You don’t have permission to add a {name}."
+      save_error: Could not save. Please review the form and try again.
+      required: required
+
+    record:
+      edit: Edit
+      delete: Delete
+      delete_confirm: Delete this record? This cannot be undone.
+      views: "{count} views"
+      view: "{count} view"
+
+    comments:
+      heading_one: "{count} Comment"
+      heading_other: "{count} Comments"
+      open_in_forum: Open in forum
+      be_first: Be the first to comment.
+      login_link: Log in
+      login_suffix: to leave a comment.
+      placeholder: Write a comment…
+      post_button: Post comment
+      post_error: Could not post your comment. Please try again.
+      unknown_author: Unknown
+
+    image:
+      upload: Upload
+      replace: Replace
+      remove: Remove
+      uploading: Uploading…
+      click_to_upload: Click to upload
+      drag_drop: or drag & drop
+      broken: Image didn’t load. Upload a new one or fix the URL below.
+      paste_url: …or paste an image URL
+      upload_error: Upload failed. Make sure the file is an image within the allowed size.
+
+    promote:
+      button: Promote to article
+      confirm: "Promote this discussion to an article?\n\nIts first post becomes the article body, and the discussion becomes the article’s comment thread (hidden from the forum listing)."
+      success: Promoted to article.
+      error: Could not promote this discussion.
+      demote_button: Demote to discussion
+      demote_confirm: "Demote this article back to a normal discussion?\n\nThe article will be deleted and the discussion will return to the forum listing. The discussion and its replies are kept."
+      demote_success: Demoted to a discussion.
+      demote_error: Could not demote this discussion.
+
+    block:
+      recent_empty: No discussions yet.
+      online_empty: No one online right now.
+      featured_empty: No featured discussions.
+      newest_empty: No members yet.
+      taggrid_empty: No tags to show.
+      recordlist_empty: Nothing here yet.
+      embed_prompt: Add a YouTube or Vimeo URL.
+      view_all: View all
+      posts_one: "{count} post"
+      posts_other: "{count} posts"
+      discussions: "{count} discussions"
+      stat_members: Members
+      stat_discussions: Discussions
+      stat_posts: Posts
+      stat_online: Online
+
+    field:
+      ids_placeholder: IDs, comma separated
+      id_placeholder: ID
+      yes: "Yes"
+      no: "No"
+
+  lib:
+    designer:
+      back_pages: Pages
+      preview: Preview
+      save_changes: Save changes
+      layout: Layout
+      no_rows: No rows yet. Add a row to start building this page.
+      add_row: Add row
+      add_column: Column
+      add_block: Add block
+      add_a_block: Add a block
+      page_title: Page title
+      slug: Slug
+      meta_description: Meta description (SEO)
+      published: Published
+      show_in_nav: Show in nav
+      row_label: "Row {n}"
+      width_wide: Wide
+      width_narrow: Narrow
+      width_full: Full bleed
+      pad_none: No padding
+      pad_sm: Small padding
+      pad_md: Medium padding
+      pad_lg: Large padding
+      bg_placeholder: Background (CSS color)
+      delete_row: Delete row
+      delete_row_confirm: Delete this row and all its blocks?
+      delete_column: Delete column
+      delete_column_confirm: Delete this column and its blocks?
+      delete_block: Delete block
+      move_up: Move up
+      move_down: Move down
+      drag_row: Drag to reorder row
+      drag_column: Drag to reorder column
+      drag_block: Drag to move block
+      width: Width
+      visibility: Visibility
+      vis_groups: "Visible to groups (none = everyone):"
+      device_desktop: Desktop
+      device_mobile: Mobile
+      unknown_block: "Unknown block type {type} (its extension may be disabled)."
+
+    live:
+      editing: Editing
+      cancel: Cancel
+      save_layout: Save layout
+      empty: Empty page — add a row to begin.
+      edit_settings: Edit settings
+      add_column: Add column
+      column_width: Column width (of 12)
+      unknown_block: "Unknown block: {type}"
+
+  admin:
+    nav_label: Page Builder
+    home_page_option: Home (Page Builder)
+
+    home_card:
+      title: Forum homepage
+      help: "Choose a page to serve as your forum’s front page. Then set Home Page → “Home (Page Builder)” on the Basics page to make it the default landing route."
+      none_option: — None (default forum) —
+      preview: Preview
+      is_default: This page is your forum’s default landing route.
+      not_default: Selected — set it as the default route in Basics to finish.
+
+    pages:
+      title: Pages
+      help: Build custom pages from blocks — a homepage, a landing page, an about page. Drag in a Hero, text, images, buttons, and forum widgets, and arrange them in a responsive grid.
+      new_button: New page
+      empty: No pages yet. Create one to start designing.
+      col_title: Title
+      col_url: URL
+      col_status: Status
+      status_published: Published
+      status_draft: Draft
+      edit: Edit
+      delete: Delete
+      create_prompt: "Title for the new page:"
+      delete_confirm: "Delete the page “{title}”? This cannot be undone."
+
+    types:
+      title: Content types
+      help: Define your own kinds of content — articles, downloads, a directory, a knowledge base. Each has its own fields, categories, and permissions.
+      new_button: New content type
+      empty_title: No content types yet.
+      empty_help: Create one to start building structured content.
+      col_name: Name
+      col_slug: Slug
+      col_fields: Fields
+      col_records: Records
+      edit: Edit
+      delete: Delete
+      create_prompt: "Name for this content type (singular, e.g. \"Article\"):"
+      delete_confirm: "Delete “{name}” and all {count} of its records? This cannot be undone."
+
+    type_editor:
+      back: Back to content types
+      fields: Fields
+      fields_help: "The fields members fill in for each {name}."
+      no_fields: No fields yet. Add your first field.
+      badge_required: required
+      badge_title: title
+      badge_in_list: in list
+      add_field: Add field
+      categories: Categories
+      categories_help: "Optional groupings for {plural}. Members pick one when submitting; visitors can filter the listing by them."
+      no_categories: No categories. Add one to let records be grouped and filtered.
+      add_category: Add category
+      settings: Settings
+      name_singular: Name (singular)
+      name_plural: Name (plural)
+      slug: Slug
+      icon: Icon (FontAwesome)
+      description: Description
+      sort_by: Sort records by
+      sort_newest: Newest first
+      sort_oldest: Oldest first
+      sort_title: Title
+      per_page: Records per page
+      moderate: Approve new submissions before they appear
+      allow_comments: Allow comments on records
+      who_view: Who can view
+      who_submit: Who can submit
+      who_edit_any: Who can edit any
+      save_settings: Save settings
+      delete_field_confirm: "Delete the “{label}” field? Existing record values for it are kept but no longer shown."
+      category_name_prompt: "Category name:"
+      delete_category_confirm: "Delete the “{name}” category? Records in it become uncategorized."
+      hero_subhead: Listing hero
+      hero_enable: Show a hero banner on the listing page
+      layout: Layout
+      layout_full: Full-width background
+      layout_split: Side-by-side (image + text)
+      image_side: Image side
+      side_right: Right
+      side_left: Left
+      alignment: Alignment
+      align_center: Center
+      align_left: Left
+      heading: Heading
+      subheading: Subheading
+      background: Background
+      bg_gradient: Gradient
+      bg_solid: Solid color
+      bg_image: Image
+      gradient_start: Gradient start
+      gradient_end: Gradient end
+      gradient_angle: Gradient angle
+      color: Color
+      overlay: Image overlay darkness
+      image: Image
+      button_label: Primary button label
+      button_link: Primary button link
+      button2_label: Secondary button label
+      button2_link: Secondary button link
+      height: Height
+      height_sm: Compact
+      height_md: Medium
+      height_lg: Tall
+      text_color: Text color
+      text_light: Light
+      text_dark: Dark
+      text_custom: Custom color
+      text_custom_color: Custom text color
+      groups_everyone: "Leave all unchecked for everyone."
+      groups_admins: "Leave all unchecked for admins only."
+
+    field_editor:
+      title_edit: Edit field
+      title_add: Add field
+      field_type: Field type
+      label: Label
+      key: Key
+      key_help: The machine name stored with each record. Cannot change after creation.
+      help_text: Help text (optional)
+      options: Options
+      required: Required
+      show_in_list: Show in listings
+      use_as_title: Use as record title
+      save_field: Save field
+      save_error: Could not save the field.
+
+    image_field:
+      upload: Upload image
+      replace: Replace image
+      remove: Remove
+      uploading: Uploading…
+      paste_url: …or paste an image URL
+
+    save: Save
+    saving: Saving…
