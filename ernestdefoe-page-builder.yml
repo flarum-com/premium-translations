@@ -3,6 +3,7 @@ ernestdefoe-page-builder:
     loading: Loading…
     not_found: This content could not be found.
     edit_layout: Edit layout
+    layout_save_error: Could not save the layout. Your changes were not stored — please try again.
     markdown_placeholder: Write your content…
 
     record_list:
@@ -63,6 +64,7 @@ ernestdefoe-page-builder:
       broken: Image didn’t load. Upload a new one or fix the URL below.
       paste_url: …or paste an image URL
       upload_error: Upload failed. Make sure the file is an image within the allowed size.
+      upload_unavailable: Image uploads require the FriendsOfFlarum Upload extension (fof/upload). Install and enable it, or paste an image URL below.
 
     promote:
       button: Promote to article
