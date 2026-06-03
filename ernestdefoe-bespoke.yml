@@ -1,0 +1,167 @@
+ernestdefoe-bespoke:
+  forum:
+    # ---- editor chrome ----
+    launcher: Edit theme
+    brand: Bespoke
+    subtitle: Theme Builder
+    close: Close
+    save_draft: Save draft
+    publish: Publish
+    light: Light
+    dark: Dark
+    saved: Draft saved — only you can see it
+    published: Published live to all visitors
+    inspect_on: Inspect on — hover and click any element
+    inspect: Inspect — click any element to jump to its controls
+
+    # ---- tabs ----
+    tab_palette: Palette
+    tab_type: Type
+    tab_shape: Shape
+    tab_layout: Layout
+    tab_hero: Hero
+    tab_discussion: Discussion
+    tab_effects: Effects
+    tab_site: Site
+    tab_widgets: Widgets
+    tab_presets: Presets
+
+    # ---- shared option labels ----
+    opt_on: 'On'
+    opt_off: 'Off'
+    opt_solid: Solid
+    opt_transparent: Transparent
+    opt_gradient: Gradient
+    opt_none: None
+    opt_left: Left bar
+    opt_full: Full
+
+    hero_colors: Hero colours
+    layout_hero_width: Hero width
+
+    # ---- palette ----
+    palette_roles: Color roles
+    palette_generate: Generate harmony from Brand
+    palette_contrast: Contrast (text on background)
+    role_brand: Brand
+    role_accent: Accent
+    role_bg: Background
+    role_surface: Surface
+    role_text: Text
+    role_muted: Muted
+    role_border: Border
+    role_hero_from: Hero gradient (from)
+    role_hero_to: Hero gradient (to)
+    role_hero_text: Hero text
+
+    # ---- contrast checker ----
+    contrast_title: Accessibility (WCAG contrast)
+    contrast_text_bg: Text on background
+    contrast_text_surface: Text on surface
+    contrast_brand_bg: Brand on background
+
+    # ---- typography ----
+    type_heading_font: Heading font
+    type_body_font: Body font
+    type_base_size: Base size
+    type_scale: Type scale
+    type_line_height: Line height
+    type_google_hint: Type any Google Font name, or pick a popular one.
+    type_google_note: You can use ANY Google Font — just type its name. The list below is only a few popular suggestions.
+    type_google_search: Search Google Fonts…
+
+    # ---- shape ----
+    shape_radius: Corner radius
+    shape_elevation: Elevation
+    shape_button_style: Button style
+    shape_post_style: Post style
+    shape_post_boxed: Boxed
+    shape_post_flat: Flat
+    shape_post_bubble: Bubble
+    shape_post_hint: How posts look inside a discussion.
+    shape_avatar_style: Avatar shape
+    shape_avatar_circle: Circle
+    shape_avatar_rounded: Rounded
+    shape_avatar_square: Square
+    shape_avatar_hexagon: Hexagon
+
+    # ---- layout ----
+    layout_sidebar: Sidebar position
+    layout_hero: Hero banner
+    layout_discussion_list: Discussion list
+    layout_cards_per_row: Cards per row
+    layout_cards_hint: Auto fits as many ~248px cards as the width allows.
+    layout_content_width: Content width
+    layout_width_mode: Layout width
+    layout_width_contained: Contained
+    layout_width_full: Full width
+    layout_bg_image: Site background image (URL)
+    layout_bg_hint: Sits behind the whole site. Pair with a translucent surface for a glassy look.
+    layout_custom_css: Custom CSS
+    layout_custom_css_hint: Advanced — your own CSS, injected last so it overrides everything.
+    layout_density: Density
+    layout_feed: Feed
+    layout_grid: Grid
+    layout_category: Category
+    layout_shown: Shown
+    layout_hidden: Hidden
+    layout_hero_height: Hero height
+    layout_hero_contained: Contained
+    layout_hero_full: Full width
+    layout_hero_image: Hero background image (URL)
+    layout_hero_dismiss: Hero dismissal
+    layout_hero_dismissable: Dismissible
+    layout_hero_locked: Always show
+
+    # ---- widgets ----
+    widgets_tray: Click a widget to add it
+    widgets_move_hint: Drag a widget onto the page, or drag it by its handle to move/reorder it.
+    widgets_placed: Placed widgets (click to edit)
+    widget_remove: Remove widget
+    widget_hero: Hero banner
+    widget_stats: Community stats
+    widget_online: Online users
+    widget_cta: Call to action
+    widget_markdown: Markdown / HTML
+    widget_tags: Tag cloud
+    widget_articles: Articles (Page Builder)
+    widget_contributors: Top Contributors
+    widget_trending: Trending threads
+    widget_newest: Newest Members
+
+    # ---- effects ----
+    fx_header_style: Header style
+    fx_header_center: Centre the logo
+    fx_sticky: Sticky header
+    fx_glass: Glassmorphism
+    fx_glass_hint: Frosted, translucent surfaces. Best paired with a site background image.
+    fx_animations: Subtle animations
+    fx_dark_toggle: Visitor dark-mode toggle
+    fx_dark_hint: Adds a sun/moon switch in the header so visitors choose their own scheme.
+    fx_tag_colors: Colour UI by active tag
+    fx_tag_hint: Recolours the hero and brand accent to match the active tag (replaces ramon/colored).
+    fx_card_borders: Card tag accent
+
+    # ---- site (announcement + footer) ----
+    site_announce: Announcement bar
+    site_announce_text: Announcement text
+    site_announce_link: Link URL (optional)
+    site_footer: Custom footer
+    site_footer_text: Footer text / copyright
+    site_footer_links: Footer links
+    site_footer_addlink: Add link
+    site_footer_social: Social links
+
+    # ---- presets ----
+    presets_title: Starter themes
+    presets_library: Theme library
+    presets_export: Export theme JSON
+    presets_import: Import theme JSON
+    presets_import_hint: Import a .bespoke.json file exported from any Bespoke site.
+    presets_imported: Theme imported — review and publish to go live
+    presets_import_error: That file isn’t a valid Bespoke theme
+
+  admin:
+    default_preset: Default preset for new installs
+    enable_theme: Apply the Bespoke theme to the forum
+    permission_edit: Use the Bespoke theme editor
