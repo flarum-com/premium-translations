@@ -11,6 +11,7 @@ ernestdefoe-bespoke:
     dark: Dark
     saved: Draft saved — only you can see it
     published: Published live to all visitors
+    save_error: Couldn’t save — please check your connection and try again
     inspect_on: Inspect on — hover and click any element
     inspect: Inspect — click any element to jump to its controls
 
@@ -42,6 +43,9 @@ ernestdefoe-bespoke:
     # ---- palette ----
     palette_roles: Color roles
     palette_generate: Generate harmony from Brand
+    palette_standard: Standard
+    palette_high_contrast: High contrast
+    palette_hc_hint: These colours show automatically for visitors whose device requests higher contrast (e.g. macOS “Increase contrast”). Tune them for maximum legibility.
     palette_contrast: Contrast (text on background)
     role_brand: Brand
     role_accent: Accent
@@ -122,7 +126,7 @@ ernestdefoe-bespoke:
     widget_stats: Community stats
     widget_online: Online users
     widget_cta: Call to action
-    widget_markdown: Markdown / HTML
+    widget_text: Text block
     widget_tags: Tag cloud
     widget_articles: Articles (Page Builder)
     widget_contributors: Top Contributors
