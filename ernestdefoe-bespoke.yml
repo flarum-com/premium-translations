@@ -1,5 +1,9 @@
 ernestdefoe-bespoke:
   forum:
+    # ---- reading aids ----
+    to_top: Back to top
+    toc: Contents
+
     # ---- editor chrome ----
     launcher: Edit theme
     brand: Bespoke
@@ -12,8 +16,14 @@ ernestdefoe-bespoke:
     saved: Draft saved — only you can see it
     published: Published live to all visitors
     save_error: Couldn’t save — please check your connection and try again
-    load_error: Couldn’t load the theme. Make sure you’re signed in as an admin and reload.
+    load_error: Couldn’t load the theme. Make sure you’re signed in and reload.
     discard_confirm: You have unsaved changes. Close the editor and discard them?
+    # ---- personal "My Theme" scope ----
+    apply_personal: Apply to my view
+    personal_applied: Saved — this is now how the site looks for you
+    reset_personal: Reset to default
+    reset_confirm: Reset your personal theme back to the site default?
+    reset_done: Reverted to the site default
     inspect_on: Inspect on — hover and click any element
     inspect: Inspect — click any element to jump to its controls
 
@@ -192,3 +202,4 @@ ernestdefoe-bespoke:
     default_preset: Default preset for new installs
     enable_theme: Apply the Bespoke theme to the forum
     permission_edit: Use the Bespoke theme editor
+    permission_customize: Personalise their own view (My Theme)
