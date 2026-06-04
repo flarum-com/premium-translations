@@ -135,6 +135,27 @@ ernestdefoe-bespoke:
     widget_trending: Trending threads
     widget_newest: Newest Members
 
+    # ---- widget inspector field labels (resolved by slug in WidgetsPanel) ----
+    wf_title: Title
+    wf_heading: Heading
+    wf_subheading: Subheading
+    wf_body: Body
+    wf_content: Content
+    wf_button: Button
+    wf_button_text: Button text
+    wf_button_link: Button link
+    wf_how_many: How many
+    wf_period: Period
+    wf_rank_by: Rank by
+    wf_layout: Layout
+    wf_style: Style
+    wf_trending_over: Trending over
+    wf_background_image: Background image
+    wf_filter_by_tag_slug_optional: Filter by tag slug (optional)
+    wf_filter_by_category_slug_optional: Filter by category slug (optional)
+    wf_show_cover_images: Show cover images
+    wf_show_excerpts: Show excerpts
+
     # ---- effects ----
     fx_header_style: Header style
     fx_header_center: Centre the logo
