@@ -15,7 +15,7 @@ ernestdefoe-ai-helper:
     bot_user_id: Bot account (user ID)
     bot_user_id_help: The forum user the bot posts as. Create a dedicated account and put its numeric ID here.
     process_queue: Process the queue on the scheduler
-    process_queue_help: "For hosts without a persistent queue worker. When on, the per-minute scheduler (php flarum schedule:run) drains the queue each minute so bot replies, DM triage and notifications are processed. Leave OFF if you already run a dedicated `php flarum queue:work` daemon."
+    process_queue_help: "For hosts without a persistent queue worker. When on, the per-minute scheduler (php flarum schedule:run) drains the queue each minute so bot replies, DM triage and notifications are processed. Leave OFF if you run a persistent worker — e.g. a dedicated `php flarum queue:work` daemon or a Horizon-managed Redis queue (running both wastes resources and races the worker)."
     tags: Watched tags
     tags_help: Tags the bot auto-watches — it answers every new post in these even without an @mention. @mentions still work everywhere. Select none to only answer explicit @mentions.
     tags_none: No tags found. Install and enable the Tags extension to use this.
@@ -37,6 +37,8 @@ ernestdefoe-ai-helper:
     triage_enabled_help: When on, the bot classifies posts it answers and records bugs/feature requests below. High-confidence bugs auto-file a GitHub issue; everything else waits for your approval.
     dm_triage_enabled: Capture from direct messages
     dm_triage_enabled_help: When on, an admin can DM the bot account (e.g. paste audit results) and every bug/suggestion is logged to the queue/GitHub. The bot replies with what it logged. Requires flarum/messages; admin senders only.
+    dm_chat_enabled: Reply to direct messages (chat)
+    dm_chat_enabled_help: "When on, the bot replies conversationally to any direct message it's a participant in — like a private support chat — answering questions and acknowledging instructions. (Bug/suggestion capture above still applies to admin DMs.) Requires flarum/messages. Uses your AI budget, so members DMing the bot will consume tokens."
     github_token: GitHub token
     github_token_help: A fine-grained token with Issues read & write on your extension repos. Used to file issues. Stored on your server.
     triage_default_repo: Default repository
