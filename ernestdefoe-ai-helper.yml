@@ -38,7 +38,10 @@ ernestdefoe-ai-helper:
     triage_default_repo: Default repository
     triage_default_repo_help: Where to file when no tag mapping matches, as owner/repo (e.g. ernestdefoe/ai-helper).
     triage_repo_map: Tag → repository map
-    triage_repo_map_help: Route by tag. Comma-separated (or one per line) pairs like "calendar=ernestdefoe/calendar, picks=ernestdefoe/picks".
+    triage_repo_map_help: Route by tag. One "slug=owner/repo" pair per line (or comma-separated). Use Auto-detect to fill this from your GitHub repos + forum tags, then review and Save.
+    auto_detect: Auto-detect repositories
+    auto_detect_result: "Matched {matched} of {repos} repos — review and Save."
+    auto_detect_error: Couldn't auto-detect — add your GitHub token and Save first.
     triage_auto_confidence: Auto-file confidence (%)
     triage_auto_confidence_help: Bugs at or above this confidence are filed automatically; everything else waits in the queue. Set 0 to disable auto-filing.
     triage_panel_title: "Triage queue ({count})"
