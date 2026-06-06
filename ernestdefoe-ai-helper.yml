@@ -30,6 +30,29 @@ ernestdefoe-ai-helper:
     embeddings_model: Embeddings model
     budget: Monthly budget (USD)
     budget_help: Hard cap. The bot pauses for the rest of the month when reached. Usage is shown above.
+
+    triage_enabled: Capture bugs & suggestions
+    triage_enabled_help: When on, the bot classifies posts it answers and records bugs/feature requests below. High-confidence bugs auto-file a GitHub issue; everything else waits for your approval.
+    github_token: GitHub token
+    github_token_help: A fine-grained token with Issues read & write on your extension repos. Used to file issues. Stored on your server.
+    triage_default_repo: Default repository
+    triage_default_repo_help: Where to file when no tag mapping matches, as owner/repo (e.g. ernestdefoe/ai-helper).
+    triage_repo_map: Tag → repository map
+    triage_repo_map_help: Route by tag. Comma-separated (or one per line) pairs like "calendar=ernestdefoe/calendar, picks=ernestdefoe/picks".
+    triage_auto_confidence: Auto-file confidence (%)
+    triage_auto_confidence_help: Bugs at or above this confidence are filed automatically; everything else waits in the queue. Set 0 to disable auto-filing.
+    triage_panel_title: "Triage queue ({count})"
+    triage_empty: Nothing captured yet. Bugs and suggestions members report will appear here.
+    triage_approve: Approve & file issue
+    triage_dismiss: Dismiss
+    triage_view_issue: View issue
+    triage_reported_by: "Reported by {name}"
+    triage_pending: Pending
+    triage_filed: Filed
+    triage_bug: Bug
+    triage_suggestion: Suggestion
+    triage_filed_alert: Issue filed on GitHub.
+    triage_file_error: Couldn't file the issue — check the GitHub token and repository.
     enabled: Enable the assistant
     enabled_help: Master switch. Requires an API key and a bot account to be set.
     drafts_title: "Pending AI drafts ({count})"
