@@ -33,6 +33,8 @@ ernestdefoe-ai-helper:
 
     triage_enabled: Capture bugs & suggestions
     triage_enabled_help: When on, the bot classifies posts it answers and records bugs/feature requests below. High-confidence bugs auto-file a GitHub issue; everything else waits for your approval.
+    dm_triage_enabled: Capture from direct messages
+    dm_triage_enabled_help: When on, an admin can DM the bot account (e.g. paste audit results) and every bug/suggestion is logged to the queue/GitHub. The bot replies with what it logged. Requires flarum/messages; admin senders only.
     github_token: GitHub token
     github_token_help: A fine-grained token with Issues read & write on your extension repos. Used to file issues. Stored on your server.
     triage_default_repo: Default repository
