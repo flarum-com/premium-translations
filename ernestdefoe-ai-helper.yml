@@ -14,6 +14,8 @@ ernestdefoe-ai-helper:
     mode_draft: Draft — hold for moderator approval
     bot_user_id: Bot account (user ID)
     bot_user_id_help: The forum user the bot posts as. Create a dedicated account and put its numeric ID here.
+    process_queue: Process the queue on the scheduler
+    process_queue_help: "For hosts without a persistent queue worker. When on, the per-minute scheduler (php flarum schedule:run) drains the queue each minute so bot replies, DM triage and notifications are processed. Leave OFF if you already run a dedicated `php flarum queue:work` daemon."
     tags: Watched tags
     tags_help: Tags the bot auto-watches — it answers every new post in these even without an @mention. @mentions still work everywhere. Select none to only answer explicit @mentions.
     tags_none: No tags found. Install and enable the Tags extension to use this.
