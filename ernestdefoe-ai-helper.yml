@@ -30,6 +30,16 @@ ernestdefoe-ai-helper:
     embeddings_key: Embeddings API key
     embeddings_key_help: Required only for Vector retrieval. Voyage AI or an OpenAI-compatible key. Cheap (cents per million tokens). Run "php flarum ai-helper:reindex" after enabling.
     embeddings_model: Embeddings model
+    index_docs: Index extension docs
+    index_docs_help: >
+      Feed your installed extensions' own docs (README + composer description +
+      changelog) into the knowledge base, so the bot answers from authoritative
+      product info — not just what's been said in forum posts. Run "php flarum
+      ai-helper:index-docs" after a composer update to refresh.
+    docs_vendors: Limit doc indexing to vendors
+    docs_vendors_help: >
+      Optional. Comma-separated vendor prefixes (e.g. "ernestdefoe/") to index
+      only your own extensions. Leave blank to index every enabled extension.
     budget: Monthly budget (USD)
     budget_help: Hard cap. The bot pauses for the rest of the month when reached. Usage is shown above.
 
