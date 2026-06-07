@@ -32,10 +32,11 @@ ernestdefoe-ai-helper:
     embeddings_model: Embeddings model
     index_docs: Index extension docs
     index_docs_help: >
-      Feed your installed extensions' own docs (README + composer description +
-      changelog) into the knowledge base, so the bot answers from authoritative
-      product info — not just what's been said in forum posts. Run "php flarum
-      ai-helper:index-docs" after a composer update to refresh.
+      Feed your installed extensions' own docs (README, composer description,
+      settings & help text, changelog) into the knowledge base, so the bot
+      answers from authoritative product info — not just what's been said in
+      forum posts. Refreshes automatically: instantly when you Clear Cache, and
+      once a day. No commands or shell access needed.
     docs_vendors: Limit doc indexing to vendors
     docs_vendors_help: >
       Optional. Comma-separated vendor prefixes (e.g. "ernestdefoe/") to index
