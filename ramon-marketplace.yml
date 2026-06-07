@@ -127,14 +127,15 @@ ramon-marketplace:
       go_shop: "Browse the store"
 
     discover:
+      package_label: "Package"
       title: "Marketplace"
       section_title: "Featured Products"
       cart: "Cart"
       details: "View details"
       owned: "Owned"
       load_more: "Load more"
-      search_placeholder: "Search premium extensions..."
-      empty: "No extensions found."
+      search_placeholder: "Search products..."
+      empty: "No products found."
       no_description: "No description."
       free: "Free"
       per_month: "mo"
@@ -249,6 +250,7 @@ ramon-marketplace:
         name: "Name"
 
     product:
+      close: "Close"
       load_error: "Failed to load product"
       not_found: "Product not found"
       back_to_store: "Back to store"
@@ -328,6 +330,7 @@ ramon-marketplace:
       bundle: "Bundle"
 
     checkout:
+      load_error: "Failed to load cart. Reload the page."
       title: "Checkout"
       subtitle: "Fill in the details below to complete your order."
       back_to_cart: "Back to cart"
@@ -478,6 +481,8 @@ ramon-marketplace:
       view_ticket: "View ticket"
 
     ticket:
+      copy_failed: "Could not copy"
+      qr_alt: "QR code"
       login_required_title: "Sign in to view your ticket"
       login_required_hint: "This page is private — only you can access your ticket."
       error_title: "Couldn't load the ticket"
@@ -843,6 +848,7 @@ ramon-marketplace:
       delete: "Delete"
 
     coupons:
+      chip_synced: "OK"
       title: "Discount coupons"
       help: "Coupons are synced with Stripe automatically so they work on one-time orders AND subscriptions."
       code: "Code (e.g. WELCOME10)"
@@ -905,6 +911,7 @@ ramon-marketplace:
       create_first: "Create first coupon"
 
     licenses:
+      domain_blocked: "BLOCKED"
       title: "Licenses"
       search: "Search user, email, package, domain..."
       all_statuses: "All"
@@ -1032,6 +1039,14 @@ ramon-marketplace:
       cancel_now: "Cancel now"
 
     subscriptions:
+      cancel_action: "Cancel"
+      cancel_title: "Cancel subscription"
+      status_active: "Active"
+      status_trialing: "Trial"
+      status_past_due: "Past due"
+      status_cancelled: "Cancelled"
+      status_incomplete: "Incomplete"
+      status_unpaid: "Unpaid"
       title: "Subscriptions"
       search: "Search user, email, or package..."
       all_statuses: "All statuses"
@@ -1121,6 +1136,15 @@ ramon-marketplace:
         customers: "Customers"
 
     products:
+      empty_title: "No products yet"
+      empty_hint: "Add your first product to start selling. You can add physical, digital or service products."
+      load_error: "Failed to load products."
+      retry: "Try again"
+      delete_error: "Failed to remove product."
+      confirm_delete_title: "Delete product"
+      confirm_delete_action: "Delete"
+      per_month: "/mo"
+      per_year: "/yr"
       subnav_products: "Products"
       subnav_pool: "Pool"
       subnav_categories: "Categories"
@@ -1383,6 +1407,8 @@ ramon-marketplace:
       col_mode: "Mode"
 
     categories:
+      type_physical: "Physical"
+      type_digital: "Digital"
       title: "Categories"
       name: "Name"
       type: "Type"
@@ -1394,6 +1420,19 @@ ramon-marketplace:
       has_products: "Cannot delete — products are linked."
 
     orders:
+      totals_breakdown: "Subtotal: {subtotal} · Shipping: {shipping} ·<strong> Total: {total}</strong>"
+      filter_status_all: "All statuses"
+      status_pending: "Pending"
+      status_processing: "Processing"
+      status_shipped: "Shipped"
+      status_delivered: "Delivered"
+      status_cancelled: "Cancelled"
+      status_refunded: "Refunded"
+      filter_payment_all: "All payments"
+      pay_pending: "Pending"
+      pay_paid: "Paid"
+      pay_failed: "Failed"
+      pay_refunded: "Refunded"
       subnav_orders: "Orders"
       subnav_refunds: "Refunds"
       paid_at: "Paid at"
@@ -1563,6 +1602,10 @@ ramon-marketplace:
       confirm_delete_all: "Delete ALL files and versions? This cannot be undone."
 
     settings:
+      stripe_resync_action: "Re-sync"
+      stripe_resync_confirm_title: "Re-sync Stripe?"
+      stripe_mode_test: "Test"
+      stripe_mode_live: "Live"
       shop_types_title: "Product types available"
       shop_types_hint: "Disable types you don't sell. Products of disabled types disappear from the shop, checkout and detail page (but stay in the DB)."
       physical_enabled: "Physical products"
