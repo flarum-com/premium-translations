@@ -1,0 +1,67 @@
+onair-pro:
+  # Shared / API validation messages (translated server-side)
+  lib:
+    errors:
+      future_date: Pick a future date and time.
+      unknown_stream: That stream no longer exists.
+  forum:
+    player:
+      unsupported: Your browser can't play this stream.
+    follow:
+      notify_me: Notify me when live
+      following: Following
+    notifications:
+      went_live: "{name} is live"
+      scheduled_soon: "{name} is going live soon"
+    schedule:
+      nav: Upcoming streams
+      title: Upcoming streams
+      add: Schedule a stream
+      empty: No upcoming streams scheduled.
+      modal_title: Schedule a stream
+      title_label: Stream title
+      when_label: Date & time
+      url_label: Channel URL
+      submit: Schedule
+    vods:
+      nav: Past streams
+      title: Past streams
+      empty: No recordings yet.
+    chat:
+      title: Live chat
+      placeholder: Say something…
+      send: Send
+      empty: No messages yet — say hi!
+      login: Log in to chat.
+    multistream:
+      title: Multistream
+      hint: Forward your broadcast to YouTube/Twitch at the same time. Add the platform's RTMP URL and stream key.
+      add: Add
+    studio:
+      nav: Streaming studio
+      title: Streaming studio
+      copied: Copied to clipboard.
+      no_access: You don't have permission to stream.
+      managed_note: This community streams through a managed ingest provider. Use the server and key below in your broadcasting software.
+      ingest_label: Ingest server (paste into OBS → Settings → Stream → Server)
+      key_label: Stream key (keep this secret)
+      playback_label: Playback URL (HLS)
+      rotate: Reset stream key
+      how_title: How to go live
+      step_server: In OBS, set Service to “Custom”, and Server to the ingest URL above.
+      step_key: Paste your stream key into the Stream Key field.
+      step_golive: Click “Start Streaming” in OBS — your LIVE badge appears automatically.
+
+  admin:
+    mode_label: Streaming mode
+    mode_help: Self-hosted runs the bundled RTMP server (VPS/Docker). Managed uses a third-party ingest API (works on shared hosting).
+    mode_selfhosted: Self-hosted RTMP server
+    mode_managed: Managed ingest (Cloudflare/Mux/api.video)
+    ingest_host_label: Ingest host
+    ingest_host_help: Public hostname of your RTMP server (no protocol).
+    rtmp_port_label: RTMP port
+    hls_base_label: HLS base URL
+    hls_base_help: "Public base URL the HLS playlist is served from. Defaults to the ingest host on port 8888 (e.g. http://stream.yoursite.com:8888)."
+    webhook_secret_label: Webhook secret
+    webhook_secret_help: Shared secret the RTMP server sends to /api/onair/rtmp/hook. Must match your server config.
+    default_title_label: Default stream title
