@@ -113,6 +113,7 @@ ramon-marketplace:
 
     notifications:
       seller_approved: "Your store {store} was approved"
+      seller_verified: "Your store {store} is now verified"
       seller_review_approved: "Your review of {store} was published"
       plan_activated: "Your {plan} plan is now active"
       plan_cancelled: "Your {plan} plan has ended"
@@ -248,6 +249,7 @@ ramon-marketplace:
       store_active: "Your store is active"
       store_suspended: "Store suspended"
       notify_sellerApproved_label: "My store is approved"
+      notify_sellerVerified_label: "My store is verified"
       notify_sellerReviewApproved_label: "A review of my store is published"
       notify_planActivated_label: "A plan I subscribe to becomes active"
       notify_planCancelled_label: "A plan I subscribe to ends"
@@ -437,6 +439,7 @@ ramon-marketplace:
       bundle_added: "Bundle added to cart"
       bundle_add_error: "Could not add bundle"
       more: "more"
+      bundle_list_price: "List price"
 
     bundle:
       loading_title: "Bundle"
@@ -579,6 +582,8 @@ ramon-marketplace:
       write_review: "Leave a review"
       billing_monthly_hint: "Charged automatically every month. Cancel anytime from My subscriptions."
       billing_yearly_hint: "Charged automatically every year. Cancel anytime from My subscriptions."
+      reactivate_title: "Reactivate subscription"
+      reactivate_action: "Reactivate"
 
     cart:
       title: "Cart"
@@ -607,6 +612,8 @@ ramon-marketplace:
       cleared: "Cart cleared"
       clear_error: "Could not clear the cart"
       bundle: "Bundle"
+      confirm_clear_title: "Clear cart"
+      confirm_clear_action: "Clear"
 
     checkout:
       load_error: "Failed to load cart. Reload the page."
@@ -658,6 +665,7 @@ ramon-marketplace:
         missing_stripe_price: "Product is missing a Stripe Price. Contact the admin."
         already_owned: "You already own one or more items in this order."
         already_owned_list: "You already own: {items}"
+      activation_manual_close: "Close"
 
     success:
       title: "Order"
@@ -848,6 +856,10 @@ ramon-marketplace:
       new_token_title: "Copy it now - this token won't be shown again"
       new_token_hint: "Store it somewhere safe. If you lose it, generate another."
       dismiss: "Dismiss"
+      regenerate_title: "Generate new license"
+      regenerate_action: "Generate new"
+      revoke_title: "Revoke token"
+      revoke_action: "Revoke"
 
     subscriptions:
       title: "My subscriptions"
@@ -898,6 +910,11 @@ ramon-marketplace:
       status_incomplete_expired: "Expired"
       status_unpaid: "Unpaid"
       status_paused: "Paused"
+      reactivate_title: "Reactivate subscription"
+      reactivate_action: "Reactivate"
+      regenerate_title: "Generate new license"
+      regenerate_action: "Generate new"
+      cancel_action: "Cancel"
 
     downloads:
       title: "My downloads"
@@ -914,6 +931,8 @@ ramon-marketplace:
       items: "items"
       search_placeholder: "Search by name or order..."
       purchased_on: "Purchased on {date}"
+      load_error: "Failed to load your downloads."
+      retry: "Try again"
 
     course_store:
       title: "Courses"
@@ -1246,6 +1265,9 @@ ramon-marketplace:
       empty_files_title: "Nothing here"
       empty_files_hint_new: "Upload files above to start."
       empty_files_hint_filter: "No file matches the current filter."
+      load_error_title: "Failed to load"
+      load_error_hint: "Could not fetch products with a pool."
+      retry: "Try again"
 
     bundles:
       title: "Bundles"
@@ -1325,6 +1347,10 @@ ramon-marketplace:
       save: "Save changes"
       updated: "Bundle updated"
       delete: "Delete"
+      confirm_delete_title: "Delete bundle"
+      confirm_delete_action: "Delete"
+      invalid_image: "Select an image (jpg, png, gif, webp)"
+      remove_image: "Remove image"
 
     coupons:
       chip_synced: "OK"
@@ -1388,6 +1414,8 @@ ramon-marketplace:
       empty_title: "No coupons yet"
       empty_hint: "Create your first coupon to offer discounts at checkout. Coupons sync with Stripe automatically."
       create_first: "Create first coupon"
+      confirm_delete_title: "Delete coupon"
+      confirm_delete_action: "Delete"
 
     licenses:
       domain_blocked: "BLOCKED"
@@ -1477,6 +1505,12 @@ ramon-marketplace:
       product_not_found: "Product not found"
       invalid_expires_at: "Invalid expiration date"
       create_error: "Could not create license"
+      confirm_reactivate_title: "Reactivate license"
+      confirm_remove_action: "Remove"
+      confirm_remove_domain_title: "Remove domain"
+      confirm_revoke_title: "Revoke license"
+      confirm_unlock_title: "Unlock domain"
+      confirm_unlock_action: "Unlock"
 
     packages:
       title: "Composer packages"
@@ -1516,6 +1550,8 @@ ramon-marketplace:
       purchased_at: "Purchased"
       cancel_eop: "Cancel at end of period"
       cancel_now: "Cancel now"
+      load_error: "Failed to load packages."
+      retry: "Try again"
 
     subscriptions:
       cancel_action: "Cancel"
@@ -1601,6 +1637,13 @@ ramon-marketplace:
       err_product_not_subscription: "This product is not a subscription"
       err_already_active: "This customer already has an active subscription for this product"
       err_invalid_status: "Invalid status"
+      confirm_reactivate_title: "Reactivate subscription"
+      confirm_resurrect_title: "Recreate subscription in Stripe"
+      confirm_resurrect_trial_title: "Grace period?"
+      confirm_resurrect_trial_yes: "Set grace"
+      confirm_resurrect_trial_no: "Charge now"
+      confirm_resurrect_final_title: "Confirm recreation"
+      confirm_resurrect_final_action: "Create now"
 
     dashboard:
       title: "Overview"
@@ -1869,6 +1912,16 @@ ramon-marketplace:
       toggle_error: "Could not update product"
       click_to_activate: "Click to activate"
       click_to_deactivate: "Click to deactivate"
+      confirm_delete_version_title: "Delete version"
+      confirm_make_current_title: "Set current version"
+      keep_version_history_title: "Keep history?"
+      keep_version_history_yes: "Keep history"
+      keep_version_history_no: "Delete all"
+      remove_file_title: "Remove file"
+      remove_file_action: "Remove"
+      remove_screenshot_title: "Remove image"
+      remove_screenshot_action: "Remove"
+      set_current_action: "Set"
 
     invites:
       title: "Invites"
@@ -2065,6 +2118,11 @@ ramon-marketplace:
       totals: "Totals"
       update: "Update"
       saved: "Order updated"
+      cancel_order_title: "Cancel order"
+      cancel_order_action: "Cancel order"
+      load_error_title: "Failed to load order"
+      retry: "Try again"
+      save_error: "Failed to save."
 
     refund_requests:
       title: "Refund requests"
@@ -2190,6 +2248,12 @@ ramon-marketplace:
       confirm_make_current: "Make {version} the current version? Its ZIP becomes the default."
       confirm_delete: "Remove version {version}? Customers on it lose access to the file."
       confirm_delete_all: "Delete ALL files and versions? This cannot be undone."
+      cancel: "Cancel"
+      confirm_delete_title: "Delete version"
+      confirm_delete_action: "Delete"
+      confirm_delete_all_title: "Delete all files"
+      confirm_make_current_title: "Set current version"
+      set_current_action: "Set"
 
     books:
       title: "Books"
