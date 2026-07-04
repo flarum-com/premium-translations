@@ -4,6 +4,13 @@ ernestdefoe-bespoke:
     to_top: Back to top
     toc: Contents
 
+    # ---- discussion list cards ----
+    replies_count: "{count, plural, one {# reply} other {# replies}}"
+    views_count: "{count, plural, one {# view} other {# views}}"
+    card_menu: Discussion actions
+    typing_count: "{count, plural, one {# typing…} other {# typing…}}"
+    tag_typing: Someone is typing in this tag…
+
     # ---- editor chrome ----
     launcher: Edit theme
     brand: Bespoke
@@ -108,6 +115,10 @@ ernestdefoe-bespoke:
     layout_cards_per_row: Cards per row
     layout_cards_hint: Auto fits as many ~248px cards as the width allows.
     layout_content_width: Content width
+    layout_nav_style: Navigation style
+    layout_nav_pills: Pills
+    layout_nav_tiles: Tiles
+    layout_nav_hint: Tiles arrange the navigation as a bento grid on desktop; phones keep the standard menu.
     layout_width_mode: Layout width
     layout_width_contained: Contained
     layout_width_full: Full width
@@ -140,6 +151,9 @@ ernestdefoe-bespoke:
     widget_cta: Call to action
     widget_text: Text block
     widget_tags: Tag cloud
+    widget_tags_empty: No tags to show yet.
+    widget_online_none: No members online right now.
+    widget_online_visitors: "+ {count} visitors browsing"
     widget_articles: Articles (Page Builder)
     widget_contributors: Top Contributors
     widget_trending: Trending threads
@@ -165,6 +179,9 @@ ernestdefoe-bespoke:
     wf_filter_by_category_slug_optional: Filter by category slug (optional)
     wf_show_cover_images: Show cover images
     wf_show_excerpts: Show excerpts
+    wf_show_discussion_counts: Show discussion counts
+    wf_top_level_tags_only: Top-level tags only
+    wf_show_visitor_count: Show visitor count
 
     # ---- effects ----
     fx_header_style: Header style
