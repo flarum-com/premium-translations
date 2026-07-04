@@ -152,6 +152,7 @@ ramon-marketplace:
       view: "View"
       free_price: "Free"
       load_error: "We couldn't load your wishlist."
+      remove_failed: "Could not remove the item. Please try again."
       retry: "Try again"
 
     seller_coupons:
@@ -2819,6 +2820,9 @@ ramon-marketplace:
       stripe_fee_fixed_hint: "Fixed amount charged per transaction (e.g. 0.40 BR; 0.30 USD)."
       gift_cards_title: "Gift cards"
       gift_cards_hint: "Selling of gift cards and the page buyers see."
+      discovery: "Discovery and curation"
+      collections_enabled: "Enable curated collections"
+      collections_enabled_hint: "When off, collections disappear from the menu, the /collections and /collection pages become unavailable, and admin management is blocked."
       gift_enabled: "Enable gift card sales"
       gift_allow_custom: "Allow custom amount"
       gift_min: "Minimum amount"
