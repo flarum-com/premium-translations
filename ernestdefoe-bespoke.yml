@@ -114,6 +114,8 @@ ernestdefoe-bespoke:
     layout_discussion_list: Discussion list
     layout_cards_per_row: Cards per row
     layout_cards_hint: Auto fits as many ~248px cards as the width allows.
+    layout_card_cover: Default cover image
+    layout_card_cover_hint: Shown on grid cards whose first post has no image, so every card keeps the same silhouette. Leave empty for plain cards.
     layout_content_width: Content width
     layout_nav_style: Navigation style
     layout_nav_pills: Pills
