@@ -27,6 +27,12 @@ onair-plus:
       nav: Past streams
       title: Past streams
       empty: No recordings yet.
+      show_all: Show all
+      filtered_by: "Showing recordings by {name}."
+      delete: Delete recording
+      delete_confirm: "Delete “{title}”? The recording will be removed permanently."
+      deleted: Recording deleted.
+      delete_failed: Could not delete the recording. Please try again.
     chat:
       title: Live chat
       placeholder: Say something…
@@ -65,3 +71,5 @@ onair-plus:
     webhook_secret_label: Webhook secret
     webhook_secret_help: Shared secret the RTMP server sends to /api/onair/rtmp/hook. Must match your server config.
     default_title_label: Default stream title
+    recordings_root_label: Recordings directory
+    recordings_root_help: "Local filesystem path where the RTMP server stores recordings (e.g. /var/recordings). When set, deleting a VOD also removes its files; leave empty if the recordings live on another host — deletions then only remove the listing."
