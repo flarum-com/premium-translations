@@ -63,6 +63,7 @@ ernestdefoe-page-builder:
       drag_drop: or drag & drop
       broken: Image didn’t load. Upload a new one or fix the URL below.
       paste_url: …or paste an image URL
+      upload_hint: Upload an image
       upload_error: Upload failed. Make sure the file is an image within the allowed size.
       upload_unavailable: Image uploads require the FriendsOfFlarum Upload extension (fof/upload). Install and enable it, or paste an image URL below.
 
@@ -98,6 +99,191 @@ ernestdefoe-page-builder:
       id_placeholder: ID
       yes: "Yes"
       no: "No"
+
+
+    # ── Section builder ────────────────────────────────────────────────
+    sections:
+      types:
+        hero_name: Hero
+        hero_kind: Headline + call to action
+        features_name: Feature grid
+        features_kind: Three cards with icons
+        articles_name: Articles
+        articles_kind: LIVE — written + promoted
+        split_name: Image + text
+        split_kind: Side-by-side split
+        stats_name: Stats band
+        stats_kind: LIVE forum numbers
+        forumfeed_name: Latest discussions
+        forumfeed_kind: LIVE from your forum
+        members_name: Newest members
+        members_kind: LIVE from your forum
+        testimonial_name: Testimonial
+        testimonial_kind: Quote + author
+        pricing_name: Pricing
+        pricing_kind: Three plan cards
+        cta_name: Call to action
+        cta_kind: Closing banner
+        logos_name: Logo strip
+        logos_kind: Trusted-by row
+        faq_name: FAQ
+        faq_kind: Question list
+        unknown: Unknown section
+      live:
+        stat_discussions: Discussions
+        stat_posts: Posts
+        stat_members: Members
+        stat_online: Online now
+        loading_discussions: Loading latest discussions…
+        no_discussions: No discussions yet — they will show up here on their own.
+        loading_members: Loading members…
+        no_members: No members yet.
+        loading_articles: Loading articles…
+        no_articles: No articles yet — write one, or promote a discussion.
+        by_user: "by {user}"
+        replies: "{count, plural, one {# reply} other {# replies}}"
+        someone: someone
+        staff: Staff
+        write_article: Write an article
+        all_articles: All articles
+      defaults:
+        hero_eyebrow: WELCOME
+        hero_title: A bold headline for your community.
+        hero_lead: Say what this place is and why someone should join — in one clear sentence.
+        hero_b1: Get started
+        hero_b2: Browse the forum
+        stats_members: Members
+        stats_posts: Posts
+        stats_online: Online
+        stats_answered: Answered
+        features_title: Everything in one place
+        features_1_t: Discussions
+        features_1_d: Threaded conversations your members actually enjoy.
+        features_2_t: Real-time
+        features_2_d: Live chat and presence so it always feels alive.
+        features_3_t: Articles
+        features_3_d: Promote the best threads into polished posts.
+        testimonial_quote: It finally feels like a real website with a forum inside it.
+        testimonial_author: Jordan Lee
+        testimonial_role: Community lead
+        cta_title: Ready to join the conversation?
+        cta_lead: Create your account in seconds — it is free.
+        cta_b1: Get started
+        faq_title: Frequently asked
+        faq_1_q: Is it free to join?
+        faq_1_a: Yes — creating an account and posting is completely free.
+        faq_2_q: Can I use my forum login?
+        faq_2_a: One account works across the forum, the blog, and every page.
+        split_title: Built by the community, for the community
+        split_lead: Describe what makes this place worth joining. Swap the image for anything you like.
+        split_b1: Learn more
+        logos_title: TRUSTED BY TEAMS EVERYWHERE
+        pricing_title: Simple pricing
+        pricing_1_t: Free
+        pricing_1_d: Everything you need to get started.
+        pricing_1_b: Join free
+        pricing_2_t: Supporter
+        pricing_2_d: Back the community and get a badge.
+        pricing_2_b: Become a supporter
+        pricing_3_t: Patron
+        pricing_3_d: Priority support and early access.
+        pricing_3_b: Go patron
+        forumfeed_title: Latest from the community
+        members_title: Welcome our newest members
+        articles_title: From the blog
+        item_feature_t: New feature
+        item_feature_d: Describe it in a line or two.
+        item_stat_l: Label
+        item_faq_q: A new question?
+        item_faq_a: And the answer.
+        item_plan_t: New plan
+        item_plan_d: What this plan includes.
+        item_plan_b: Choose
+        item_logo_t: Brand
+
+    # ── Section builder: the editor UI ─────────────────────────────────
+    section_editor:
+      back: Pages
+      page_title_placeholder: Page title
+      draft: Draft
+      published: Published
+      draft_hint: Draft pages are only visible to admins
+      articles_button: Articles
+      articles_button_hint: Publish a forum discussion as an article
+      view_page: View page
+      view_page_hint: "View /p/{slug}"
+      save_first: Save first to view
+      save: Save
+      saving: Saving…
+      saved: "Saved — /p/{slug}"
+      save_error: Could not save the page.
+      sections_heading: Sections
+      add_section: Add section
+      move_up: Move up
+      move_down: Move down
+      site_theme: Site theme
+      site_theme_sub: inherited from your forum
+      site_theme_hint: These come from your forum theme. Every section uses them unless you override one. Select a section to tweak just that one.
+      brand_accent: Brand accent
+      theme_default: Forum
+      background: Background
+      bg_surface: Surface
+      bg_subtle: Subtle
+      bg_brand: Brand tint
+      bg_dark: Dark
+      bg_image: Image
+      accent_color: Accent color
+      accent_theme: Theme
+      alignment: Alignment
+      align_left: Left
+      align_center: Center
+      spacing: Spacing
+      spacing_compact: Compact
+      spacing_cozy: Cozy
+      spacing_roomy: Roomy
+      numbers: Numbers
+      numbers_live: Live
+      numbers_custom: Custom
+      numbers_live_hint: Pulling real discussion, post, member and online counts from your forum.
+      numbers_custom_hint: Click the numbers on the page to edit them.
+      layout: Layout
+      layout_grid: Grid
+      layout_carousel: Carousel
+      how_many: How many to show
+      live_hint: Live — this keeps itself up to date, no editing needed.
+      articles_live_hint: Live — written articles and promoted discussions, newest first.
+      carousel_hint: Carousel scrolls sideways, good for showcasing a lot.
+      image_side: Image side
+      image_side_left: Left
+      image_side_right: Right
+      image: Image
+      hero_bg_image: Background image
+      hero_bg_image_hint: Upload or paste a URL. Text stays readable — a dark scrim is applied automatically.
+      button_links: Button links
+      button_link_placeholder: "Link for {label} — e.g. {example}"
+      button_links_hint: "Internal paths like /all or /t/news stay in the app; full https:// URLs open normally."
+      items: "Items ({count})"
+      add_item: Add item
+      remove_item: Remove
+      icon_hint: Font Awesome class
+      mark_popular: Mark as the popular plan
+      edit_in_place: Click any text on the page to edit it in place.
+      edit_items_in_place: Click the text on the page itself to edit each item.
+      delete_section: Delete section
+      gallery_title: Add a section
+      gallery_foot: Every section drops in styled to your forum — then tweak it.
+      articles_title: Publish a discussion as an article
+      articles_new: Write a new article
+      articles_new_sub: Start from a blank article in your theme
+      articles_or: — or promote a forum discussion —
+      articles_loading: Loading your latest discussions…
+      articles_none: No discussions found yet.
+      articles_meta: "by {user} · {count, plural, one {# reply} other {# replies}}"
+      promote: Promote
+      promoting: Publishing…
+      promoted: Published as an article.
+      promote_error: Could not promote that discussion.
+      articles_foot: The article keeps your forum theme and links back to the original thread.
 
   lib:
     designer:
