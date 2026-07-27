@@ -45,29 +45,20 @@ justoverclock-reputation-score:
       minReputationThreshold: Minimum Reputation points to create or participate to a thread
       minReputationThresholdHelp: Minimum reputation points to allow the user to post or create new threads
       postRewardThreshold: Post count reward threshold
-      postRewardThresholdHelp: |
-        <p>Write the minimum post count to reward an user with a medal.</p>
-        <span>
-          Each users can earn 3 reward based on a post count, if you
-          set for example "50", the internal multiplier (x1, x3, x8) will assign the reward
-          for "50", "150" and "400" posts (bronze, silver and gold respectively).
-        </span>
+      postRewardThresholdHelp: >
+        Enter the minimum post count required to earn a medal. Users can earn three
+        rewards based on their post count. For example, a value of 50 uses the internal
+        multipliers (x1, x3, x8) to award bronze, silver, and gold at 50, 150, and 400 posts.
       discussionRewardThreshold: Discussions count reward threshold
-      discussionRewardThresholdHelp: |
-        <p>Write the minimum discussion count to reward an user with a medal.</p>
-        <span>
-          Each users can earn 3 reward based on a discussion count, if you
-          set for example "50", the internal multiplier (x1, x3, x8) will assign the reward
-          for "50", "150" and "400" discussions (bronze, silver and gold respectively).
-        </span>
+      discussionRewardThresholdHelp: >
+        Enter the minimum discussion count required to earn a medal. Users can earn three
+        rewards based on their discussion count. For example, a value of 50 uses the internal
+        multipliers (x1, x3, x8) to award bronze, silver, and gold at 50, 150, and 400 discussions.
       seniorityRewardThreshold: Seniority threshold
-      seniorityRewardThresholdHelp: |
-        <p>Write the minimum years of seniority to reward an user with a medal.</p>
-        <span>
-          Each users can earn 3 reward based on a his seniority, if you
-          set for example "1", the internal multiplier (x1, x3, x5) will assign the reward
-          for "1", "3" and "5" years of seniority (bronze, silver and gold level respectively).
-        </span>
+      seniorityRewardThresholdHelp: >
+        Enter the minimum years of seniority required to earn a medal. Users can earn three
+        rewards based on seniority. For example, a value of 1 uses the internal multipliers
+        (x1, x3, x5) to award bronze, silver, and gold after 1, 3, and 5 years.
 
   forum:
     notEnoughReputationMessage: You don't have enough reputation points to reply to this thread...
