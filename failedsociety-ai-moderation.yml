@@ -1,0 +1,34 @@
+failedsociety-ai-moderation:
+  admin:
+    settings:
+      title: "AI Moderation Pro Settings"
+      license_key_label: "License key"
+      license_key_help: "Validated in real-time upon saving!"
+      active_tags_label: "Active tag IDs (comma-separated, e.g., 1, 4; leave blank for all)"
+      
+      section_checks_label: "Active tests"
+      check_toxicity_label: "Check for toxicity"
+      check_advertising_label: "Check for advertising/spam"
+      check_links_label: "Check for (masked) links"
+      
+      section_actions_label: "Measures & Confidence"
+      threshold_flag_label: "Confidence value for 'Report post to moderation' (0–100, 0 = inactive)"
+      threshold_delete_label: "Confidence value for 'Delete post directly' (0 - 100, 0 = Inactive)"
+      
+      section_ai_label: "AI Configuration"
+      llm_provider_label: "Select an AI provider"
+      llm_api_key_label: "API-Key"
+      llm_provider_options:
+        openai: "OpenAI (ChatGPT)"
+        anthropic: "Anthropic (Claude)"
+        google: "Google (Gemini)"
+        mistral: "Mistral AI"
+      
+      section_customization_label: "Rules and notifications"
+      custom_rules_label: "Custom moderation rules"
+      custom_rules_help: "Formulate additional rules (e.g., 'No advertising for watches')."
+      notification_text_label: "Notification text for users"
+      notification_text_help: "Use {reason} as a placeholder for the AI's reasoning."
+  forum:
+    settings:
+      nnotify_ai_moderation_label:: "My post was moderated by an AI."
