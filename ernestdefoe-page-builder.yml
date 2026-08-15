@@ -78,6 +78,7 @@ ernestdefoe-page-builder:
       demote_error: Could not demote this discussion.
 
     block:
+      blog_empty: No articles published yet.
       recent_empty: No discussions yet.
       online_empty: No one online right now.
       featured_empty: No featured discussions.
@@ -286,6 +287,9 @@ ernestdefoe-page-builder:
       articles_foot: The article keeps your forum theme and links back to the original thread.
 
   lib:
+    schema:
+      multiselect_empty: Nothing available to choose from yet.
+
     designer:
       back_pages: Pages
       preview: Preview
@@ -321,6 +325,11 @@ ernestdefoe-page-builder:
       drag_column: Drag to reorder column
       drag_block: Drag to move block
       width: Width
+      block_style: Appearance
+      block_bg: Background (CSS colour or gradient)
+      block_color: Text colour
+      block_pad: Inner padding
+      block_style_hint: "Applies to this block only — the row background sits behind it."
       visibility: Visibility
       vis_groups: "Visible to groups (none = everyone):"
       device_desktop: Desktop
