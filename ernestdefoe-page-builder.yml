@@ -111,6 +111,8 @@ ernestdefoe-page-builder:
         features_kind: Three cards with icons
         articles_name: Articles
         articles_kind: LIVE — written + promoted
+        blog_name: Blog posts
+        blog_kind: LIVE from FoF Blog
         split_name: Image + text
         split_kind: Side-by-side split
         stats_name: Stats band
@@ -141,6 +143,11 @@ ernestdefoe-page-builder:
         no_members: No members yet.
         loading_articles: Loading articles…
         no_articles: No articles yet — write one, or promote a discussion.
+        loading_blog: Loading blog posts…
+        no_blog: No blog posts yet.
+        blog_missing: >-
+          This needs FriendsOfFlarum Blog, which is not installed. The section fills itself in
+          once it is, and shows nothing to visitors in the meantime.
         by_user: "by {user}"
         replies: "{count, plural, one {# reply} other {# replies}}"
         someone: someone
@@ -192,6 +199,7 @@ ernestdefoe-page-builder:
         forumfeed_title: Latest from the community
         members_title: Welcome our newest members
         articles_title: From the blog
+        blog_title: Latest blog posts
         item_feature_t: New feature
         item_feature_d: Describe it in a line or two.
         item_stat_l: Label
@@ -252,7 +260,15 @@ ernestdefoe-page-builder:
       layout_carousel: Carousel
       how_many: How many to show
       live_hint: Live — this keeps itself up to date, no editing needed.
+      feed_image: Row picture
+      feed_image_avatar: Author avatar
+      feed_image_thumbnail: Discussion image
+      feed_image_hint: >-
+        Uses the first image in each discussion's opening post, the same one FriendsOfFlarum
+        Discussion Thumbnail shows in the discussion list. A discussion with no image keeps
+        the author's avatar.
       articles_live_hint: Live — written articles and promoted discussions, newest first.
+      blog_live_hint: Live — posts from your FoF Blog, newest first.
       carousel_hint: Carousel scrolls sideways, good for showcasing a lot.
       image_side: Image side
       image_side_left: Left
