@@ -1,5 +1,11 @@
 ernestdefoe-bespoke:
   forum:
+    # ---- member profile ----
+    profile_posts: "{count, plural, one {post} other {posts}}"
+    profile_discussions: "{count, plural, one {discussion} other {discussions}}"
+    profile_solutions: "{count, plural, one {solution} other {solutions}}"
+    profile_last_seen: Last seen
+
     # ---- reading aids ----
     to_top: Back to top
     toc: Contents
