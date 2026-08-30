@@ -302,6 +302,27 @@ ernestdefoe-page-builder:
       promote_error: Could not promote that discussion.
       articles_foot: The article keeps your forum theme and links back to the original thread.
 
+    transfer:
+      export: Export
+      export_title: Download this page as a file you can import on another forum
+      export_all: Export all
+      export_all_title: Download every page as one bundle
+      export_error: Could not export. Please try again.
+      import: Import
+      import_title: Add pages from a bundle exported by another forum
+      importing: Importing…
+      imported: "{count, plural, one {# page imported} other {# pages imported}} as {drafts}."
+      imported_drafts: "{count, plural, one {a draft} other {drafts}}"
+      import_review: Open each one to check it over, then publish.
+      import_renamed: "“{title}” already existed here, so the copy was saved as /p/{slug}."
+      import_hosts: "This design loads images from {hosts}. Those will not resolve here until you replace them."
+      not_a_bundle: That file is not a Page Builder export.
+      newer_format: That bundle was made by a newer version of Page Builder. Update this forum first.
+      no_pages: That bundle contains no pages.
+      too_many: "That bundle contains more than {max} pages."
+      import_error: Could not import that bundle.
+      unreadable: That file could not be read as JSON.
+
   lib:
     schema:
       multiselect_empty: Nothing available to choose from yet.
