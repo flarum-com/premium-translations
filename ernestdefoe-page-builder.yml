@@ -267,6 +267,14 @@ ernestdefoe-page-builder:
         Uses the first image in each discussion's opening post, the same one FriendsOfFlarum
         Discussion Thumbnail shows in the discussion list. A discussion with no image keeps
         the author's avatar.
+      feed_hide_tags: Hide these tags
+      feed_hide_tags_help: >-
+        Click a tag to leave its discussions out of this feed. Handy for a blog tag, which
+        already has its own Blog section, or a staff-only tag.
+      feed_hide_tags_on: >-
+        {n, plural, one {# tag hidden from this feed} other {# tags hidden from this feed}}
+      feed_tags_loading: Loading tags…
+      feed_tags_none: No tags to hide — this forum has none you can see.
       articles_live_hint: Live — written articles and promoted discussions, newest first.
       blog_live_hint: Live — posts from your FoF Blog, newest first.
       carousel_hint: Carousel scrolls sideways, good for showcasing a lot.
