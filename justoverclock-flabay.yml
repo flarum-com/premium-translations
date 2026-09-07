@@ -1,0 +1,127 @@
+justoverclock-flabay:
+  admin:
+    currency: Flabay transaction currency
+    currencyHelp: Currency used for all marketplace listings and payments.
+    stripeSecretKey: Stripe platform secret key
+    stripeSecretKeyHelp: Server-only platform key. Prefer FLABAY_STRIPE_SECRET_KEY in the deployment environment. Never use a seller key.
+    stripeWebhookSecret: Stripe webhook signing secret
+    stripeWebhookSecretHelp: Signing secret for the /api/flabay/stripe/webhook endpoint. Prefer FLABAY_STRIPE_WEBHOOK_SECRET.
+    applicationFee: Application fee (basis points)
+    applicationFeeHelp: 100 basis points equals 1%. Leave at 0 for no platform fee.
+    terms: Marketplace terms and conditions
+    termsHelp: Plain-text terms shown in the marketplace terms modal. Line breaks are preserved.
+    showTermsInSidebar: Show terms in the homepage sidebar
+    showTermsInSidebarHelp: Add a marketplace terms and conditions link to the main forum navigation.
+    permission:
+      canSellProducts: Submit and manage own Flabay listings
+      canBuyProducts: Buy Flabay listings
+      canModerateProducts: Review and moderate Flabay listings
+      canViewOrders: View all Flabay orders
+
+  forum:
+    generic_error: Flabay could not complete that request. Please try again.
+    checkout_error: Checkout could not be started. The item may be unavailable or the seller may need to finish Stripe setup.
+
+    connect:
+      heading: Flabay seller payments
+      help: Stripe securely hosts seller verification, bank details, payment processing, and the payout dashboard. Flabay never receives your Stripe password or secret API key.
+      ready: Your Stripe account is ready to accept payments.
+      incomplete: Finish Stripe onboarding before buyers can purchase your items.
+      not_connected: Connect a Stripe account to receive payments for approved listings.
+      start_button: Connect with Stripe
+      continue_button: Continue Stripe onboarding
+      dashboard_button: Open Stripe dashboard
+      error: Stripe seller onboarding is unavailable. Ask the forum administrator to activate and configure Stripe Connect.
+
+    marketplace:
+      nav: Marketplace
+      title: "{username}'s marketplace"
+      subtitle: Approved items available through secure Stripe Checkout.
+      new_button: New listing
+      load_more: Load more
+      empty: There are no items to show.
+      post_tooltip: "View {username}'s marketplace"
+
+    terms:
+      link: Terms and conditions
+      title: Marketplace terms and conditions
+      empty: The marketplace terms and conditions have not been published yet.
+      back: Back to discussions
+      agreement: I have read and agree to the marketplace terms and conditions.
+      accept_button: Accept and go to my marketplace
+      marketplace_button: Go to my marketplace
+      accept_error: Your acceptance could not be saved. Please try again.
+      selling_disabled: Selling is unavailable until marketplace terms and conditions are published.
+
+    product:
+      back_to_marketplace: Back to seller marketplace
+      unavailable: This product is unavailable or you do not have permission to view it.
+      digital_file: "Private digital delivery ({size})"
+
+    form:
+      create_title: Create a listing
+      edit_title: Edit listing
+      title_label: Title
+      description_label: Description
+      price_label: "Price ({currency})"
+      images_label: Product images
+      images_help: Add 1 to 5 JPEG, PNG, or WebP images. Each image can be up to 5 MB.
+      images_required: Add at least one image before submitting the listing.
+      images_too_many: "You can upload at most {max} images."
+      remove_image: Remove image
+      file_label: Digital product file
+      file_help: Attach one private file, up to 100 MB. Selecting another file replaces the current delivery.
+      file_required: Attach the digital product file before submitting the listing.
+      file_invalid: Select a non-empty file no larger than 100 MB.
+      file_attached: Digital file attached
+      save_button: Submit for review
+      cancel_button: Close
+      saved: Listing submitted for moderator review.
+
+    status:
+      pending: Pending review
+      active: Available
+      rejected: Changes requested
+      cancelled: Cancelled
+      sold: Sold
+
+    actions:
+      edit: Edit
+      approve: Approve
+      reject: Reject
+      cancel: Cancel
+      resubmit: Resubmit for review
+      buy: Buy with Stripe
+      history: History
+      reason_prompt: Add a reason for this moderation action.
+
+    moderation:
+      nav: Review marketplace products
+      title: Flabay moderation
+      subtitle: Review pending listings before they become visible or purchasable.
+      refresh: Refresh
+      empty: There are no listings waiting for review.
+
+    notifications:
+      approve: "{username} approved your Flabay listing."
+      reject: "{username} requested changes to your Flabay listing."
+      cancel: "{username} cancelled your Flabay listing."
+      edit: "{username} edited your Flabay listing."
+      sold: "{username} bought {product} for {amount}."
+      file_updated: "{username} replaced the download for {product}."
+
+    order:
+      title: Flabay order
+      pending_help: Stripe may still be confirming the payment. This page will update automatically.
+      back: Back to discussions
+      download: Download product
+      replace_label: Replace the delivered file (100 MB maximum)
+      replace: Replace file
+      replaced: The delivered file was replaced and the buyer was notified.
+      status:
+        pending: Waiting for payment confirmation
+        paid: Payment confirmed
+        expired: Checkout expired
+        failed: Payment failed
+        refunded: Payment refunded
+        disputed: Payment disputed
