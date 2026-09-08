@@ -1,0 +1,50 @@
+justoverclock-nextgen-theme:
+  admin:
+    appearance_title: Appearance
+    accent_label: Accent color
+    accent_help: Used for primary actions, selected controls, links, and focus indicators.
+    guest_reminder:
+      title: Guest participation reminder
+      help: Show a call to action only to signed-out visitors. The home-list position counts discussion cards; the post position counts all items in the discussion stream.
+      show_on_index: Show in the home discussion list
+      show_in_discussions: Also show between discussion posts
+      index_position: Insert after discussion number
+      post_position: Insert after post number
+      message_title: Reminder heading
+      description: Reminder text
+      link_label: Optional link label
+      link_url: Optional link URL
+      link_help: Leave both optional link fields empty to hide it. Relative forum paths and HTTP(S) or mailto links are supported.
+      validation_error: Add a heading and message, and complete both optional link fields with a safe URL or leave both empty.
+    footer:
+      title: Global footer
+      help: Empty about fields fall back to the forum title and description. Relative forum paths and HTTP(S) or mailto links are supported.
+      about_heading: About heading
+      description: Plain-text description
+      socials: Social links
+      group_one_heading: First navigation heading
+      group_one_links: First navigation links
+      group_two_heading: Second navigation heading
+      group_two_links: Second navigation links
+      copyright: Copyright text
+      label_placeholder: Label
+      add_link: Add link
+      remove_link: Remove link
+      no_icon: No icon
+      validation_error: Every link needs a label and a safe relative, HTTP(S), or mailto URL.
+
+  forum:
+    index:
+      title: Recent Discussions
+      sort_label: Sort discussions
+    widgets:
+      label: Discussion highlights
+      popular_title: Popular discussions
+      new_title: New discussions
+      categories_title: Popular tags
+      discussions: "{count, plural, one {# discussion} other {# discussions}}"
+      loading: Loading widget
+      empty: Nothing to show yet.
+      error: This widget could not be loaded.
+      retry: Retry
+      refresh: Refresh widget
