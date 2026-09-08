@@ -1,0 +1,53 @@
+justoverclock-discord-sync:
+  admin:
+    client_id: OAuth2 client ID
+    client_secret: OAuth2 client secret
+    bot_token: Bot token
+    guild_id: Discord guild ID
+    invite_url: Guild invitation URL
+    category_id: Personal-channel category ID
+    role_allowlist: Displayed role IDs (JSON array)
+    role_allowlist_help: Only these Discord roles may appear on public profiles.
+    diagnostics_title: Connection diagnostics
+    callback_uri: OAuth callback URI
+    required_intents: Required Gateway intents
+    linked_users: Linked users
+    worker: Gateway worker
+    invite_bot: Add bot to the configured server
+    invite_bot_help: Save the Application ID and Discord guild ID first. This button then opens Discord with the correct server already selected.
+    test_button: Test and load Discord data
+    test_failed: Discord validation failed. Check the credentials, guild ID, and bot permissions.
+    categories: Eligible categories
+    roles: Available roles
+
+  forum:
+    settings:
+      title: Discord
+      connect: Connect Discord
+      public_profile: Show my Discord profile publicly
+      show_game: Show my current game
+      sync_avatar: Keep my Flarum avatar synchronized with Discord
+      sync_now: Sync now
+      unlink: Unlink Discord
+      unlink_confirm: Unlink your Discord account? Your current Flarum avatar will be preserved.
+      join_server: Join the Discord server, then retry
+      not_member: Your linked account is not currently a guild member.
+    profile:
+      member_since: "Discord member since {date}"
+      playing: "Playing {game}"
+      join_server: Join Discord server
+    post:
+      status: "Discord: {status}"
+    presence:
+      online: Online
+      idle: Idle
+      dnd: Do not disturb
+      offline: Offline
+    oauth:
+      linked: Discord account connected.
+      invalid_state: The Discord connection request expired or was invalid. Please try again.
+      cancelled: Discord authorization was cancelled.
+      not_member: You must join the configured Discord server before linking.
+      already_linked: That Discord account is already connected to another forum account.
+      unlink_first: Unlink your current Discord account before changing it.
+      discord_error: Discord could not complete the connection. Please try again later.
