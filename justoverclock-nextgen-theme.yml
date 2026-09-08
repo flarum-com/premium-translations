@@ -42,6 +42,12 @@ justoverclock-nextgen-theme:
       popular_title: Popular discussions
       new_title: New discussions
       categories_title: Popular tags
+      active_users_title: Most active users
+      stats_title: Forum statistics
+      total_posts: Total posts
+      total_users: Registered users
+      total_discussions: Total discussions
+      posts: Posts
       discussions: "{count, plural, one {# discussion} other {# discussions}}"
       loading: Loading widget
       empty: Nothing to show yet.
