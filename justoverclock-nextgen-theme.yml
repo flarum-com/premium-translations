@@ -1,4 +1,12 @@
 justoverclock-nextgen-theme:
+  api:
+    hashtags:
+      invalid: Hashtags must contain 2–30 letters or numbers, with hyphens or underscores only between them.
+      too_many: A discussion can have at most five hashtags.
+      duplicate: A hashtag may only be assigned once.
+      tag_collision: This hashtag is already used by a taxonomy tag.
+      hashtag_collision: This slug is already used by a discussion hashtag.
+
   admin:
     appearance_title: Appearance
     accent_label: Accent color
@@ -16,6 +24,8 @@ justoverclock-nextgen-theme:
       link_url: Optional link URL
       link_help: Leave both optional link fields empty to hide it. Relative forum paths and HTTP(S) or mailto links are supported.
       validation_error: Add a heading and message, and complete both optional link fields with a safe URL or leave both empty.
+    permissions:
+      edit_hashtags_label: Edit hashtags on any discussion
     footer:
       title: Global footer
       help: Empty about fields fall back to the forum title and description. Relative forum paths and HTTP(S) or mailto links are supported.
@@ -37,11 +47,25 @@ justoverclock-nextgen-theme:
     index:
       title: Recent Discussions
       sort_label: Sort discussions
+    hashtags:
+      label: Hashtags
+      help: Add up to five. Use 2–30 letters or numbers; internal hyphens and underscores are allowed.
+      placeholder: Add a hashtag
+      invalid: Use 2–30 letters or numbers, with hyphens or underscores only inside the hashtag.
+      duplicate: That hashtag is already selected.
+      limit: A discussion can have at most five hashtags.
+      remove: "Remove #{hashtag}"
+      assigned_label: Discussion hashtags
+      edit_title: Edit discussion hashtags
+      edit_button: Edit hashtags
+      save: Save hashtags
+      meta_description: "Discussions filed under #{hashtag}."
     widgets:
       label: Discussion highlights
       popular_title: Popular discussions
       new_title: New discussions
-      categories_title: Popular tags
+      categories_title: Popular categories
+      hashtags_title: Popular hashtags
       active_users_title: Most active users
       stats_title: Forum statistics
       total_posts: Total posts
