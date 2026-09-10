@@ -21,6 +21,12 @@ ernestdefoe-ai-helper:
     tags_none: No tags found. Install and enable the Tags extension to use this.
     persona: Persona / extra guidance
     persona_help: Optional. Appended to the system prompt — tone, scope, things to always or never say.
+    web_search: Web search
+    web_search_help: "Anthropic provider only. The bot searches the live web while answering and cites its sources — ideal when the forum has little content of its own or questions need current information. Costs $10 per 1,000 searches on top of normal tokens (counted in the usage dashboard)."
+    web_search_max_uses: Max searches per reply
+    web_search_max_uses_help: Upper bound on searches for a single answer. 3–5 suits most questions; raise it for research-heavy topics.
+    web_search_domains: Limit to domains
+    web_search_domains_help: Optional comma-separated allowlist. When set, the bot only searches these sites (e.g. your product docs, or trusted community wikis). Leave empty to search the whole web.
     retrieval: Knowledge retrieval (RAG)
     retrieval_off: Off — only the current thread
     retrieval_fulltext: FULLTEXT — search your posts (no extra key)
@@ -30,6 +36,14 @@ ernestdefoe-ai-helper:
     embeddings_key: Embeddings API key
     embeddings_key_help: Required only for Vector retrieval. Voyage AI or an OpenAI-compatible key. Cheap (cents per million tokens). Run "php flarum ai-helper:reindex" after enabling.
     embeddings_model: Embeddings model
+    embeddings_os_url: OpenSearch URL
+    embeddings_os_url_help: The cluster address, reachable from the forum. The cluster embeds text itself, so nothing is billed per item.
+    embeddings_os_model_id: Deployed model ID
+    embeddings_os_model_id_help: The ML Commons text-embedding model id. Changing the model changes the vector space, so re-index afterwards and never mix the two.
+    embeddings_os_user: OpenSearch username
+    embeddings_os_password: OpenSearch password
+    embeddings_os_verify_tls: Verify TLS certificate
+    embeddings_os_verify_tls_help: Turn off for a cluster reached over an internal network with a self-signed certificate.
     index_docs: Index extension docs
     index_docs_help: >
       Feed your installed extensions' own docs (README, composer description,
@@ -80,6 +94,7 @@ ernestdefoe-ai-helper:
     drafts_discard: Discard
 
   forum:
+    bot_pane_label: AI assistant
     summarize: Summarize with AI
     summary_title: Thread summary
     summary_loading: Reading the thread and writing a summary…
