@@ -44,6 +44,11 @@ justoverclock-nextgen-theme:
       validation_error: Every link needs a label and a safe relative, HTTP(S), or mailto URL.
 
   forum:
+    sidebar:
+      navigation: Navigation
+      categories: Categories
+      collapse: Collapse sidebar
+      expand: Expand sidebar
     index:
       title: Recent Discussions
       sort_label: Sort discussions
@@ -68,9 +73,9 @@ justoverclock-nextgen-theme:
       hashtags_title: Popular hashtags
       active_users_title: Most active users
       stats_title: Forum statistics
-      total_posts: Total posts
-      total_users: Registered users
-      total_discussions: Total discussions
+      total_posts: posts
+      total_users: users
+      total_discussions: discussions
       posts: Posts
       discussions: "{count, plural, one {# discussion} other {# discussions}}"
       loading: Loading widget
