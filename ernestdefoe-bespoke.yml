@@ -120,6 +120,15 @@ ernestdefoe-bespoke:
     layout_discussion_list: Discussion list
     layout_cards_per_row: Cards per row
     layout_cards_hint: Auto fits as many ~248px cards as the width allows.
+    unread_title: Posts you have not read
+    unread_count: "{count, plural, one {# new} other {# new}}"
+    layout_max_subforums: Subforums per card
+    layout_subforums_all: All
+    layout_max_subforums_hint: >-
+      How many subforums each forum card lists before it links to the rest.
+      Choose All when the subforums are the point — a conference listing its
+      teams — and a lower number when one forum has far more than its
+      neighbours, since a card that runs long stretches its whole row.
     layout_card_cover: Default cover image
     layout_card_cover_hint: Shown on grid cards whose first post has no image, so every card keeps the same silhouette. Leave empty for plain cards.
     layout_content_width: Content width
