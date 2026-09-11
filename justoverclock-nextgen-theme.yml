@@ -57,6 +57,10 @@ justoverclock-nextgen-theme:
       post_count: "{count, plural, one {# post} other {# posts}}"
       posts: "{count, plural, one {post} other {posts}}"
       latest_post: "Latest post #{number}"
+    discussion_meta:
+      label: Discussion details
+      posts: "{count, plural, one {# post} other {# posts}}"
+      participants: "{count, plural, one {# participant} other {# participants}}"
     hashtags:
       label: Hashtags
       help: Add up to five. Use 2–30 letters or numbers; internal hyphens and underscores are allowed.
