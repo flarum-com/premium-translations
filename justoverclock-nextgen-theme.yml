@@ -52,6 +52,11 @@ justoverclock-nextgen-theme:
     index:
       title: Recent Discussions
       sort_label: Sort discussions
+    discussion_activity:
+      label: "Post activity for {title}"
+      post_count: "{count, plural, one {# post} other {# posts}}"
+      posts: "{count, plural, one {post} other {posts}}"
+      latest_post: "Latest post #{number}"
     hashtags:
       label: Hashtags
       help: Add up to five. Use 2–30 letters or numbers; internal hyphens and underscores are allowed.
