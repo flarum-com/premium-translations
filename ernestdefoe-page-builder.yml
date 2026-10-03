@@ -8,6 +8,8 @@ ernestdefoe-page-builder:
 
     record_list:
       new_button: "New {name}"
+      add_hero: Add a hero banner
+      edit_hero: Edit hero banner
       empty: "No {plural} yet."
       all_categories: All
       previous: Previous
@@ -246,6 +248,15 @@ ernestdefoe-page-builder:
       alignment: Alignment
       align_left: Left
       align_center: Center
+      heading_color: Heading color
+      text_color: Text color
+      text_color_hint: Colors the eyebrow, headline and text that sit on this section's background. Cards keep their own colors.
+      custom_color: Pick any color
+      width: Width
+      width_full: Full width
+      width_contained: Contained
+      width_full_hint: The content runs across the whole page.
+      width_contained_hint: The content lines up with the rest of your forum and follows your theme's content width. The background still runs edge to edge.
       spacing: Spacing
       spacing_compact: Compact
       spacing_cozy: Cozy
