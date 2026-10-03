@@ -230,8 +230,7 @@ ernestdefoe-page-builder:
       save_error: Could not save the page.
       sections_heading: Sections
       add_section: Add section
-      move_up: Move up
-      move_down: Move down
+      drag_section: "Drag to reorder (or Alt + ↑ / ↓)"
       site_theme: Site theme
       site_theme_sub: inherited from your forum
       site_theme_hint: These come from your forum theme. Every section uses them unless you override one. Select a section to tweak just that one.
