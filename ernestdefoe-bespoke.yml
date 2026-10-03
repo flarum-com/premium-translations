@@ -156,6 +156,8 @@ ernestdefoe-bespoke:
     layout_hero_dismiss: Hero dismissal
     layout_hero_dismissable: Dismissible
     layout_hero_locked: Always show
+    layout_page_hero_padding: Page hero padding
+    layout_page_hero_padding_hint: Space above and below the title in the discussion, tag and profile heroes.
 
     # ---- widgets ----
     widgets_tray: Click a widget to add it
