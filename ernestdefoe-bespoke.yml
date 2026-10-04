@@ -221,6 +221,7 @@ ernestdefoe-bespoke:
     site_announce_link: Link URL (optional)
     site_footer: Custom footer
     site_footer_text: Footer text / copyright
+    site_footer_text_hint: "Plain text, plus a few safe extras: line breaks (press Enter, or {br}), links ({a} — http, https or mailto only), {bold}, {italic}, {span} without attributes, and entities such as {entity}. Anything else shows exactly as typed."
     site_footer_links: Footer links
     site_footer_addlink: Add link
     site_footer_social: Social links
