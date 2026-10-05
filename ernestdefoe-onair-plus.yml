@@ -4,6 +4,10 @@ onair-plus:
     errors:
       future_date: Pick a future date and time.
       unknown_stream: That stream no longer exists.
+      stream_ended: This stream has ended, so its chat is closed.
+      invalid_url: Enter a link starting with https:// or http://.
+      invalid_rtmp_url: Enter the platform's rtmp:// or rtmps:// server URL.
+      invalid_stream_key: "Stream keys may only contain letters, numbers and - _ . ? = &."
   forum:
     player:
       unsupported: Your browser can't play this stream.
