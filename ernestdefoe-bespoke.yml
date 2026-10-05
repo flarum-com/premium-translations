@@ -201,6 +201,27 @@ ernestdefoe-bespoke:
     wf_show_discussion_counts: Show discussion counts
     wf_top_level_tags_only: Top-level tags only
     wf_show_visitor_count: Show visitor count
+    wf_how_many_0_all: How many (0 = all)
+    wf_image_url_placeholder: Image URL
+    # select options (slugged from the English option label, like field labels)
+    wf_this_week: This week
+    wf_this_month: This month
+    wf_all_time: All time
+    wf_posts: Posts
+    wf_likes_received: Likes received
+    wf_discussions_started: Discussions started
+    wf_list_with_join_date: List (with join date)
+    wf_avatar_grid: Avatar grid
+    wf_last_24_hours: Last 24 hours
+    wf_last_48_hours: Last 48 hours
+    wf_last_7_days: Last 7 days
+    wf_chips: Chips
+    wf_list_with_counts: List (with counts)
+    wf_forum_categories_with_subforums: Forum categories (with subforums)
+    wf_cards: Cards
+    wf_carousel: Carousel
+    wf_compact_list: Compact list
+    wf_featured_list: Featured + list
 
     # ---- effects ----
     fx_header_style: Header style
