@@ -36,6 +36,22 @@ ernestdefoe-page-builder:
       no_permission_add: "You don’t have permission to add a {name}."
       save_error: Could not save. Please review the form and try again.
       required: required
+      hero_label: Banner
+      hero_cover: Cover image
+      hero_listing: Listing banner
+      hero_custom: Custom banner
+      hero_cover_help: The cover image runs across the top, as it always has.
+      hero_listing_help: Uses the listing page's banner style, with this title as the heading and the cover image as its picture.
+      hero_custom_help: A banner of its own. Anything left empty comes from the listing page's banner, the heading from the title and the picture from the cover image.
+      hero_image_hint: Leave empty to use the cover image.
+
+    hero_modal:
+      title: "{name} banner"
+      enable: Show a banner at the top of the listing
+      disabled_help: The listing shows its title and description instead of a banner.
+      save: Save banner
+      cancel: Cancel
+      saved: Banner saved.
 
     record:
       edit: Edit
@@ -342,6 +358,47 @@ ernestdefoe-page-builder:
       unreadable: That file could not be read as JSON.
 
   lib:
+    hero:
+      layout: Layout
+      layout_full: Full-width background
+      layout_split: Side-by-side (image + text)
+      image_side: Image side
+      side_right: Right
+      side_left: Left
+      alignment: Alignment
+      align_center: Center
+      align_left: Left
+      heading: Heading
+      subheading: Subheading
+      background: Background
+      bg_gradient: Gradient
+      bg_solid: Solid color
+      bg_image: Image
+      gradient_start: Gradient start
+      gradient_end: Gradient end
+      gradient_angle: Gradient angle
+      color: Color
+      overlay: Image overlay darkness
+      image: Image
+      button_label: Primary button label
+      button_link: Primary button link
+      button2_label: Secondary button label
+      button2_link: Secondary button link
+      height: Height
+      height_sm: Compact
+      height_md: Medium
+      height_lg: Tall
+      text_color: Text
+      text_light: Light
+      text_dark: Dark
+      text_custom: Custom color
+      text_custom_color: Custom text color
+      heading_color: Heading color
+      body_color: Text color
+      color_default: Default
+      custom_color: Pick any color
+      text_color_hint: Heading color and text color override Light or Dark for the heading and the text under it.
+
     schema:
       multiselect_empty: Nothing available to choose from yet.
 
