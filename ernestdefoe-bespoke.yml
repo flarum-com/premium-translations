@@ -168,7 +168,7 @@ ernestdefoe-bespoke:
     widget_stats: Community stats
     widget_online: Online users
     widget_cta: Call to action
-    widget_text: Text block
+    widget_text: Text / HTML block
     widget_tags: Tag cloud
     widget_tags_empty: No tags to show yet.
     widget_online_none: No members online right now.
