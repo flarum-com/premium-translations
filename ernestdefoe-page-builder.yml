@@ -238,11 +238,11 @@ ernestdefoe-page-builder:
       articles_button: Articles
       articles_button_hint: Publish a forum discussion as an article
       view_page: View page
-      view_page_hint: "View /p/{slug}"
+      view_page_hint: "View /page/{slug}"
       save_first: Save first to view
       save: Save
       saving: Saving…
-      saved: "Saved — /p/{slug}"
+      saved: "Saved — /page/{slug}"
       save_error: Could not save the page.
       sections_heading: Sections
       add_section: Add section
@@ -348,7 +348,7 @@ ernestdefoe-page-builder:
       imported: "{count, plural, one {# page imported} other {# pages imported}} as {drafts}."
       imported_drafts: "{count, plural, one {a draft} other {drafts}}"
       import_review: Open each one to check it over, then publish.
-      import_renamed: "“{title}” already existed here, so the copy was saved as /p/{slug}."
+      import_renamed: "“{title}” already existed here, so the copy was saved as /page/{slug}."
       import_hosts: "This design loads images from {hosts}. Those will not resolve here until you replace them."
       not_a_bundle: That file is not a Page Builder export.
       newer_format: That bundle was made by a newer version of Page Builder. Update this forum first.
