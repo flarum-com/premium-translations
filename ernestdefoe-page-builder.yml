@@ -20,6 +20,7 @@ ernestdefoe-page-builder:
 
     editor:
       new_title: "New {name}"
+      page_title_edit: "Edit · {name}"
       edit_title: "Edit {name}"
       title_label: Title
       untitled: Untitled
@@ -112,6 +113,8 @@ ernestdefoe-page-builder:
       stat_discussions: Discussions
       stat_posts: Posts
       stat_online: Online
+      button_default: Button
+      embed_title: Embedded media
 
     field:
       ids_placeholder: IDs, comma separated
@@ -149,6 +152,14 @@ ernestdefoe-page-builder:
         logos_kind: Trusted-by row
         faq_name: FAQ
         faq_kind: Question list
+        compare_name: Before / after
+        compare_kind: Two pictures, one slider
+        chart_name: Bar charts
+        chart_kind: Up to three, side by side
+        table_name: Comparison table
+        table_kind: Rows of yes, partly and no
+        catalogue_name: Extensions
+        catalogue_kind: LIVE from your catalogue
         unknown: Unknown section
       live:
         stat_discussions: Discussions
@@ -172,6 +183,7 @@ ernestdefoe-page-builder:
         staff: Staff
         write_article: Write an article
         all_articles: All articles
+        premium: Premium
       defaults:
         hero_eyebrow: WELCOME
         hero_title: A bold headline for your community.
@@ -193,7 +205,7 @@ ernestdefoe-page-builder:
         testimonial_author: Jordan Lee
         testimonial_role: Community lead
         cta_title: Ready to join the conversation?
-        cta_lead: Create your account in seconds — it is free.
+        cta_lead: Create your account in seconds — it’s free.
         cta_b1: Get started
         faq_title: Frequently asked
         faq_1_q: Is it free to join?
@@ -227,10 +239,46 @@ ernestdefoe-page-builder:
         item_plan_d: What this plan includes.
         item_plan_b: Choose
         item_logo_t: Brand
+        split_eyebrow: WHAT IT DOES
+        badge: NEW
+        checks: "The first thing it does\nAnd the second"
+        compare_title: See the difference
+        compare_lead: Drag the handle to compare the two.
+        compare_before: Before
+        compare_after: After
+        chart_title: The numbers speak
+        chart_lead: "Compare anything: times, prices, sizes. Your own bar stands out."
+        chart_1_t: First reply
+        chart_1_sub: Average wait, in hours
+        chart_bar_email: Email
+        chart_bar_tickets: Tickets
+        chart_bar_us: Our forum
+        chart_bar_new: New bar
+        chart_new_t: New chart
+        chart_new_sub: What the bars measure
+        table_title: How we compare
+        table_us: Us
+        table_them: Others
+        table_row_1: Free to join
+        table_row_2: Your data stays yours
+        table_row_new: New row
+        table_col_new: New column
+      table:
+        "yes": "Yes"
+        partly: Partly
+        "no": "No"
+        not_stated: Not stated
+        cycle: "Click to change: yes, partly, no, not stated"
+      pricing:
+        popular: Popular
+        per_month: /mo
+      compare:
+        slider: Compare the two pictures
 
     # ── Section builder: the editor UI ─────────────────────────────────
     section_editor:
       back: Pages
+      untitled_page: Untitled page
       page_title_placeholder: Page title
       draft: Draft
       published: Published
@@ -335,6 +383,56 @@ ernestdefoe-page-builder:
       promoted: Published as an article.
       promote_error: Could not promote that discussion.
       articles_foot: The article keeps your forum theme and links back to the original thread.
+      motion: Motion
+      motion_none: Still
+      motion_reveal: Ease in on scroll
+      motion_hint: >-
+        Sections settle into place as visitors scroll, bar charts grow, and a hero's window
+        straightens. Visitors who ask their device for less motion always get the page still.
+      tint_dark: Tint dark sections with the brand colour
+      tint_dark_hint: Dark bands take on a deep shade of the page's accent instead of plain black.
+      anchor: Link name
+      anchor_hint: Give this section a name so a menu link can jump straight to it.
+      anchor_hint_set: "Link to it with {link} at the end of the page's address."
+      hero_media: Picture under the headline
+      hero_video: Or a video (MP4 or WebM link)
+      window_label: Address shown in the window
+      media_alt: Describe it, for screen readers
+      hero_media_hint: >-
+        Shown in a window frame below the buttons. A video plays muted and loops, with the
+        picture as its poster while it loads.
+      extras: Extras
+      extra_eyebrow: Small heading above the title
+      extra_badge: Badge
+      extra_checks: Checklist
+      image2: Second picture (stacked under the first)
+      extras_hint: Each extra appears on the page, where you edit its words like any other text.
+      compare_before: Left picture
+      compare_after: Right picture
+      compare_hint: Use two pictures the same size, such as a light and a dark screenshot.
+      chart_n: "Chart {n}"
+      remove_chart: Remove chart
+      bar_value: The bar's length
+      bar_highlight: Highlight this bar
+      add_bar: Add bar
+      add_chart: Add chart
+      chart_hint: >-
+        The numbers set each bar's length; the label beside a bar is text you edit on the page,
+        so it can say "6 GB" or "$840". Star the bar that is yours.
+      table_columns: "Columns ({count})"
+      column_highlight: Highlight this column
+      add_column: Add column
+      table_rows: "Rows ({count})"
+      add_row: Add row
+      table_legend: Show the key under the table
+      table_hint: >-
+        Click a cell's dot on the page to change it ({statuses}); click its words to write your
+        own.
+      card_picture: Picture (shown in place of the icon)
+      card_link: Link (the whole card becomes it)
+      second_button: A second button
+      second_button_default: Learn more
+      item_more: More for this item
 
     transfer:
       export: Export
@@ -356,6 +454,121 @@ ernestdefoe-page-builder:
       too_many: "That bundle contains more than {max} pages."
       import_error: Could not import that bundle.
       unreadable: That file could not be read as JSON.
+
+    manager:
+      title: Pages
+      load_error: Could not load pages.
+      home_set: "“{title}” is now the homepage."
+      home_error: Could not set the homepage.
+      delete_confirm: "Delete “{title}”? This can’t be undone."
+      delete_error: Could not delete the page.
+      freeform_title: Freeform GrapesJS editor
+      freeform: Freeform
+      new_page: New page
+      empty: "No pages yet. Click <b>New page</b> to design your first one in the live editor."
+      home: Home
+      draft: Draft
+      view: View
+      design: Design
+      set_home: Set home
+      delete: Delete
+      content_types: Content types
+      design_template: Design template
+
+    builder:
+      untitled_page: Untitled page
+      record_template: Record template
+      record_template_named: "{name} — record template"
+      template_saved: Template saved.
+      template_save_error: Could not save the template.
+      saved: Saved
+      saved_slug: "Saved — /page/{slug}"
+      save_error: Could not save the page.
+      back: Back to pages
+      page_title: Page title
+      published: Published
+      pages: Pages
+      save: Save
+      load_error: "Couldn’t load the editor: {error}"
+      bundle_missing: builder.js loaded but PBEditor missing
+      bundle_failed: Failed to load builder.js
+      upload_failed_title: Upload failed
+      upload_failed: Could not upload the image.
+      save_page: Save page
+      blocks:
+        cat_sections: Sections
+        cat_layout: Layout
+        cat_widgets: Widgets
+        cat_basic: Basic
+        cat_record: Record fields
+        hero: Hero
+        hero_split: Hero (split)
+        features: Features (3)
+        stats: Stats row
+        cta: Call to action
+        split: Image + text
+        testimonial: Testimonial
+        cards: Cards (3)
+        footer: Footer
+        section: Section
+        row2: 2 Columns
+        row3: 3 Columns
+        spacer: Spacer
+        heading: Heading
+        text: Text
+        image: Image
+        button: Button
+        divider: Divider
+        w_recent: Recent discussions
+        w_stats: Forum stats
+        w_newest: Newest members
+        w_online: Online now
+        w_tags: Tags
+        widget_hint: Live data appears on the published page.
+        record_title: Record title
+        field: "Field: {name}"
+        hero_title: Welcome to the community
+        hero_lead: A short, punchy line about what this page is for.
+        hero_button: Get started
+        split_hero_title: A headline that sells the idea
+        split_hero_lead: Two or three sentences of supporting copy that explain the value and invite the reader in.
+        learn_more: Learn more
+        features_title: What you get
+        feature_title: Feature title
+        feature_text: A sentence describing this feature and why it matters.
+        stat_members: Members
+        stat_discussions: Discussions
+        stat_posts: Posts
+        cta_title: Ready to jump in?
+        cta_lead: Join the conversation today.
+        cta_button: Sign up
+        story_title: Tell your story
+        story_text: Explain a feature or idea with an image alongside supporting copy. Drag to reorder the columns.
+        read_more: Read more
+        quote: "“A short, glowing quote that builds trust with new visitors.”"
+        quote_by: — A happy member
+        card_title: Card title
+        card_text: A short description for this card.
+        footer_name: Your Community
+        footer_tagline: A friendly place to talk.
+        footer_links: Links
+        footer_about: About
+        footer_rules: Rules
+        footer_more: More
+        footer_contact: Contact
+        footer_terms: Terms
+        text_placeholder: Write something…
+
+    widgets:
+      discussions: Discussions
+      posts: Posts
+      members: Members
+      recent: Recent discussions
+      newest: Newest members
+      online: Online now
+      tags: Tags
+      nothing_yet: Nothing yet.
+      no_one_online: No one online.
 
   lib:
     hero:
@@ -596,3 +809,356 @@ ernestdefoe-page-builder:
 
     save: Save
     saving: Saving…
+
+  api:
+    page_not_found: Page not found.
+    type_not_found: Content type not found.
+    record_not_found: Record not found.
+    category_not_found: Category not found.
+    field_not_found: Field not found.
+    discussion_not_found: Discussion not found.
+    unknown_field_type: Unknown field type.
+    no_permission_delete: You do not have permission to delete this.
+    no_permission_view: You do not have permission to view this.
+    no_permission_edit: You do not have permission to edit this.
+    no_permission_submit: You do not have permission to submit.
+    no_articles_type: No "articles" content type exists to promote into.
+    untitled: Untitled
+    default_category: Category
+    default_field: Field
+    default_type_name: Item
+    comments_card: "💬 Comments for {link}"
+    comments_card_hint: Leave a comment below to join the conversation.
+    field_errors:
+      required: This field is required.
+      color: "Must be a hex color like #3366ff."
+      choice: Not a valid choice.
+      email: Must be a valid email address.
+      image_required: An image is required.
+      image_invalid: Image must be an uploaded file or an http(s) URL.
+      number: Must be a number.
+      date: Must be a valid date.
+      url: Must be a valid http(s) URL.
+      min: "Must be at least {min}."
+      max: "Must be at most {max}."
+
+    blocks:
+      'hero':
+        name: 'Hero banner'
+        'layout':
+          label: 'Layout'
+          options:
+            'full': 'Full-width background'
+            'split': 'Side-by-side (image + text)'
+        'image_side':
+          label: 'Image side (split)'
+          options:
+            'right': 'Right'
+            'left': 'Left'
+        'heading':
+          label: 'Heading'
+          default: 'Welcome to our community'
+        'subheading':
+          label: 'Subheading'
+        'button_label':
+          label: 'Primary button label'
+        'button_url':
+          label: 'Primary button link'
+        'button2_label':
+          label: 'Secondary button label'
+        'button2_url':
+          label: 'Secondary button link'
+        'button_style':
+          label: 'Button style'
+          help: 'Choose "Both outline" to make the primary button match the secondary outline button.'
+          options:
+            'mixed': 'Filled + outline'
+            'outline': 'Both outline'
+            'filled': 'Both filled'
+        'buttons_position':
+          label: 'Button position'
+          help: 'Pin the call-to-action buttons to the bottom of the hero (full-width layout only).'
+          options:
+            'inline': 'Below the text'
+            'bottom': 'Bottom of hero'
+        'bg_type':
+          label: 'Background'
+          options:
+            'gradient': 'Gradient'
+            'solid': 'Solid color'
+            'image': 'Image'
+        'bg_color':
+          label: 'Color / gradient start'
+        'bg_color2':
+          label: 'Gradient end'
+        'bg_angle':
+          label: 'Gradient angle'
+        'bg_image':
+          label: 'Background image'
+          help: 'Used when Background is set to Image.'
+        'overlay':
+          label: 'Image overlay darkness'
+        'text_color':
+          label: 'Text color'
+          options:
+            'light': 'Light'
+            'dark': 'Dark'
+            'custom': 'Custom color'
+        'text_color_custom':
+          label: 'Custom text color'
+          help: 'Used when Text color is set to Custom.'
+        'align':
+          label: 'Alignment'
+          options:
+            'center': 'Center'
+            'left': 'Left'
+        'height':
+          label: 'Height'
+          options:
+            'sm': 'Compact'
+            'md': 'Medium'
+            'lg': 'Tall'
+      'heading':
+        name: 'Heading'
+        'text':
+          label: 'Text'
+          default: 'Heading'
+        'level':
+          label: 'Size'
+        'align':
+          label: 'Align'
+          options:
+            'left': 'Left'
+            'center': 'Center'
+            'right': 'Right'
+      'text':
+        name: 'Text'
+        'content':
+          label: 'Content'
+          help: 'Plain text. Line breaks become paragraphs. Use the HTML block for markup.'
+        'align':
+          label: 'Align'
+          options:
+            'left': 'Left'
+            'center': 'Center'
+            'right': 'Right'
+      'html':
+        name: 'HTML'
+        'html':
+          label: 'HTML'
+          help: 'Sanitized on save. Scripts and event handlers are stripped.'
+      'image':
+        name: 'Image'
+        'url':
+          label: 'Image URL'
+        'alt':
+          label: 'Alt text'
+        'link':
+          label: 'Link to (optional)'
+        'rounded':
+          label: 'Rounded corners'
+        'align':
+          label: 'Align'
+          options:
+            'left': 'Left'
+            'center': 'Center'
+            'right': 'Right'
+      'button':
+        name: 'Button'
+        'label':
+          label: 'Label'
+          default: 'Click here'
+        'url':
+          label: 'URL'
+        'style':
+          label: 'Style'
+          options:
+            'primary': 'Primary'
+            'secondary': 'Secondary'
+            'outline': 'Outline'
+        'align':
+          label: 'Align'
+          options:
+            'left': 'Left'
+            'center': 'Center'
+            'right': 'Right'
+      'divider':
+        name: 'Divider'
+        'spacing':
+          label: 'Spacing'
+          options:
+            'sm': 'Small'
+            'md': 'Medium'
+            'lg': 'Large'
+        'line':
+          label: 'Show line'
+      'recent-discussions':
+        name: 'Recent Discussions'
+        'title':
+          label: 'Title'
+          default: 'Recent Discussions'
+        'tags':
+          label: 'Limit to tags (leave empty for all)'
+          help: 'Only show discussions carrying one of these tags — e.g. pick your blog tag to list recent blog posts.'
+        'limit':
+          label: 'How many'
+      'featured-discussions':
+        name: 'Featured Discussions'
+        'title':
+          label: 'Title'
+          default: 'Featured'
+        'ids':
+          label: 'Discussion IDs'
+          help: 'Comma-separated discussion IDs, in the order to show them. The ID is in a discussion URL, e.g. /d/123.'
+        'show_excerpt':
+          label: 'Show excerpt'
+      'online-users':
+        name: 'Online Users'
+        'title':
+          label: 'Title'
+          default: 'Online Now'
+        'limit':
+          label: 'How many'
+      'newest-members':
+        name: 'Newest Members'
+        'title':
+          label: 'Title'
+          default: 'Newest Members'
+        'limit':
+          label: 'How many'
+        'show_date':
+          label: 'Show join date'
+      'stats':
+        name: 'Forum Stats'
+        'title':
+          label: 'Title'
+        'show_members':
+          label: 'Members'
+        'show_discussions':
+          label: 'Discussions'
+        'show_posts':
+          label: 'Posts'
+        'show_online':
+          label: 'Online'
+      'record-list':
+        name: 'Content list'
+        'content_type':
+          label: 'Content type'
+        'title':
+          label: 'Heading'
+          help: 'Leave blank to use the type name.'
+        'layout':
+          label: 'Layout'
+          options:
+            'grid': 'Card grid'
+            'list': 'Compact list'
+        'limit':
+          label: 'How many'
+        'sort':
+          label: 'Sort'
+          options:
+            'newest': 'Newest first'
+            'oldest': 'Oldest first'
+            'title': 'Title (A–Z)'
+        'show_more':
+          label: 'Show "view all" link'
+      'tag-grid':
+        name: 'Tag Grid'
+        'title':
+          label: 'Title'
+          default: 'Browse'
+        'tags':
+          label: 'Specific tags (leave empty for automatic)'
+          help: 'Pick exactly which tags appear, in place of the automatic selection.'
+        'primary_only':
+          label: 'Primary tags only (automatic mode)'
+        'show_count':
+          label: 'Show discussion counts'
+        'limit':
+          label: 'Max tags'
+      'blog-posts':
+        name: 'Blog Posts'
+        'title':
+          label: 'Title'
+          default: 'From the blog'
+        'limit':
+          label: 'How many'
+        'featured_only':
+          label: 'Featured articles only'
+        'show_image':
+          label: 'Show featured image'
+        'show_summary':
+          label: 'Show summary'
+      'embed':
+        name: 'Embed'
+        'url':
+          label: 'URL'
+          help: 'A YouTube or Vimeo video URL.'
+        'ratio':
+          label: 'Aspect ratio'
+          options:
+            '16x9': '16:9 (widescreen)'
+            '1x1': '1:1 (square)'
+        'caption':
+          label: 'Caption'
+    field_types:
+      'text':
+        name: 'Text'
+        'max_length':
+          label: 'Max length'
+      'textarea':
+        name: 'Long text'
+        'max_length':
+          label: 'Max length'
+      'richtext':
+        name: 'Rich text'
+      'markdown':
+        name: 'Editor (rich post)'
+      'image':
+        name: 'Image'
+      'number':
+        name: 'Number'
+        'min':
+          label: 'Minimum'
+        'max':
+          label: 'Maximum'
+        'decimals':
+          label: 'Allow decimals'
+      'date':
+        name: 'Date'
+        'include_time':
+          label: 'Include time'
+      'boolean':
+        name: 'Yes / No'
+      'select':
+        name: 'Dropdown'
+        'choices':
+          label: 'Choices (one per line)'
+      'multiselect':
+        name: 'Checkboxes'
+        'choices':
+          label: 'Choices (one per line)'
+      'url':
+        name: 'URL'
+      'email':
+        name: 'Email'
+      'color':
+        name: 'Color'
+      'rating':
+        name: 'Rating'
+        'max':
+          label: 'Out of'
+      'relationship':
+        name: 'Relationship'
+        'target':
+          label: 'Links to'
+          options:
+            'discussions': 'Discussions'
+            'users': 'Users'
+            'tags': 'Tags'
+            'records': 'Records (another content type)'
+        'target_type':
+          label: 'Records: content type slug'
+          help: 'Only when "Links to" is Records — the slug of the target content type.'
+        'multiple':
+          label: 'Allow multiple'
