@@ -160,6 +160,8 @@ ernestdefoe-page-builder:
         table_kind: Rows of yes, partly and no
         catalogue_name: Extensions
         catalogue_kind: LIVE from your catalogue
+        depot_name: Downloads
+        depot_kind: LIVE from Depot
         unknown: Unknown section
       live:
         stat_discussions: Discussions
@@ -184,7 +186,12 @@ ernestdefoe-page-builder:
         write_article: Write an article
         all_articles: All articles
         premium: Premium
+        per_month: "{price} a month"
+        per_year: "{price} a year"
+        price_from: "From {price}"
+        all_downloads: See all downloads
       defaults:
+        depot_title: Downloads
         hero_eyebrow: WELCOME
         hero_title: A bold headline for your community.
         hero_lead: Say what this place is and why someone should join — in one clear sentence.
@@ -349,6 +356,13 @@ ernestdefoe-page-builder:
         {n, plural, one {# tag hidden from this feed} other {# tags hidden from this feed}}
       feed_tags_loading: Loading tags…
       feed_tags_none: No tags to hide — this forum has none you can see.
+      depot_show: Show
+      depot_show_downloads: Most downloaded
+      depot_show_updated: Recently updated
+      depot_show_featured: Featured
+      depot_category: From
+      depot_category_all: Every category
+      depot_live_hint: Live — straight from Depot, with prices for anything sold in your store.
       articles_live_hint: Live — written articles and promoted discussions, newest first.
       blog_live_hint: Live — posts from your FoF Blog, newest first.
       carousel_hint: Carousel scrolls sideways, good for showcasing a lot.
