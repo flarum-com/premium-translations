@@ -39,6 +39,18 @@ ernestdefoe-bespoke:
     reset_done: Reverted to the site default
     inspect_on: Inspect on — hover and click any element
     inspect: Inspect — click any element to jump to its controls
+    inspect_widget: Widget
+    inspect_hero: Hero banner
+    inspect_navigation: Navigation
+    inspect_discussion: Discussion
+    inspect_post: Post
+    inspect_avatar: Avatar
+    inspect_button: Button
+    inspect_header: Header
+    inspect_sidebar: Sidebar
+    inspect_link: Link
+    header_nav_label: Navigation
+    categories_no_discussions: No discussions yet
 
     # ---- tabs ----
     tab_palette: Palette
@@ -88,6 +100,7 @@ ernestdefoe-bespoke:
     contrast_text_bg: Text on background
     contrast_text_surface: Text on surface
     contrast_brand_bg: Brand on background
+    contrast_fail: fail
 
     # ---- typography ----
     type_heading_font: Heading font
@@ -98,6 +111,7 @@ ernestdefoe-bespoke:
     type_google_hint: Type any Google Font name, or pick a popular one.
     type_google_note: You can use ANY Google Font — just type its name. The list below is only a few popular suggestions.
     type_google_search: Search Google Fonts…
+    type_custom_font: Custom (any Google Font)…
 
     # ---- shape ----
     shape_radius: Corner radius
@@ -177,6 +191,29 @@ ernestdefoe-bespoke:
     widget_contributors: Top Contributors
     widget_trending: Trending threads
     widget_newest: Newest Members
+    widget_newest_none: No members yet.
+    widget_newest_joined: joined {ago}
+    widget_articles_none: No articles yet.
+    widget_stat_discussions: Discussions
+    widget_stat_posts: Posts
+    widget_stat_members: Members
+    widget_stat_online: Online
+    widget_contrib_posts: "{count, plural, other {{value} posts}}"
+    widget_contrib_discussions: "{count, plural, other {{value} discussions}}"
+    widget_contrib_likes: "{count, plural, other {{value} likes}}"
+    widget_trending_replies: "{count, plural, other {{value} replies}}"
+    # default widget texts (used until the admin types their own)
+    widget_default_hero_heading: Welcome to the community
+    widget_default_hero_cta: Get started
+    widget_default_stats_title: Community Stats
+    widget_default_online_title: Online Now
+    widget_default_contributors_title: Top Contributors
+    widget_default_newest_title: Newest Members
+    widget_default_trending_title: Trending
+    widget_default_cta_heading: Join the community
+    widget_default_cta_button: Create account
+    widget_default_tags_title: Popular Tags
+    widget_default_articles_title: From the blog
 
     # ---- widget inspector field labels (resolved by slug in WidgetsPanel) ----
     wf_title: Title
@@ -184,6 +221,7 @@ ernestdefoe-bespoke:
     wf_subheading: Subheading
     wf_body: Body
     wf_content: Content
+    wf_content_text_or_basic_html: Content (text or basic HTML)
     wf_button: Button
     wf_button_text: Button text
     wf_button_link: Button link
@@ -245,6 +283,7 @@ ernestdefoe-bespoke:
     site_footer_text_hint: "Plain text, plus a few safe extras: line breaks (press Enter, or {br}), links ({a} — http, https or mailto only), {bold}, {italic}, {span} without attributes, and entities such as {entity}. Anything else shows exactly as typed."
     site_footer_links: Footer links
     site_footer_addlink: Add link
+    site_footer_link_label: Label
     site_footer_social: Social links
 
     # ---- presets ----
