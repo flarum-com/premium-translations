@@ -47,6 +47,9 @@ onair-plus:
       title: Multistream
       hint: Forward your broadcast to YouTube/Twitch at the same time. Add the platform's RTMP URL and stream key.
       add: Add
+      custom: Custom
+      url_placeholder: rtmp://… URL
+      key_placeholder: destination key
     studio:
       nav: Streaming studio
       title: Streaming studio
@@ -75,5 +78,6 @@ onair-plus:
     webhook_secret_label: Webhook secret
     webhook_secret_help: Shared secret the RTMP server sends to /api/onair/rtmp/hook. Must match your server config.
     default_title_label: Default stream title
+    default_title_placeholder: Live now
     recordings_root_label: Recordings directory
     recordings_root_help: "Local filesystem path where the RTMP server stores recordings (e.g. /var/recordings). When set, deleting a VOD also removes its files; leave empty if the recordings live on another host — deletions then only remove the listing."
