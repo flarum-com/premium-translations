@@ -183,6 +183,8 @@ ernestdefoe-bespoke:
     widget_online: Online users
     widget_cta: Call to action
     widget_text: Text / HTML block
+    widget_nav: Navigation
+    widget_compose: Start a discussion
     widget_tags: Tag cloud
     widget_tags_empty: No tags to show yet.
     widget_online_none: No members online right now.
@@ -214,6 +216,7 @@ ernestdefoe-bespoke:
     widget_default_cta_button: Create account
     widget_default_tags_title: Popular Tags
     widget_default_articles_title: From the blog
+    widget_default_compose_prompt: "Tell everyone what you're working on…"
 
     # ---- widget inspector field labels (resolved by slug in WidgetsPanel) ----
     wf_title: Title
@@ -230,6 +233,8 @@ ernestdefoe-bespoke:
     wf_rank_by: Rank by
     wf_layout: Layout
     wf_style: Style
+    wf_prompt_text: Prompt text
+    wf_prompt_bar: Prompt bar
     wf_trending_over: Trending over
     wf_background_image: Background image
     wf_filter_by_tag_slug_optional: Filter by tag slug (optional)
