@@ -233,6 +233,10 @@ ernestdefoe-bespoke:
     wf_rank_by: Rank by
     wf_layout: Layout
     wf_style: Style
+    wf_show_on: Show on
+    wf_every_list_page: Every list page
+    wf_home_page_only: Home page only
+    wf_tag_pages_only: Tag pages only
     wf_prompt_text: Prompt text
     wf_prompt_bar: Prompt bar
     wf_trending_over: Trending over
