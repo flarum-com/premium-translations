@@ -488,12 +488,22 @@ ernestdefoe-page-builder:
       delete: Delete
       content_types: Content types
       design_template: Design template
+      tag_pages: Tag pages
+      tag_pages_default: "The top of every tag page: Flarum's tag banner"
+      tag_pages_custom: The top of every tag page, using your template
 
     builder:
       untitled_page: Untitled page
       record_template: Record template
       record_template_named: "{name} — record template"
       template_saved: Template saved.
+      tag_template: Tag page template
+      tag_name: Tag name
+      tag_description: Tag description
+      tag_discussion_count: Discussion count
+      reset_default: Reset to default
+      reset_confirm: "Reset this template to the default? Your design is deleted and the built-in layout comes back. This can't be undone."
+      reset_done: Template reset to the default.
       template_save_error: Could not save the template.
       saved: Saved
       saved_slug: "Saved — /page/{slug}"
