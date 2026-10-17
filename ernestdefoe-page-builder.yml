@@ -504,6 +504,7 @@ ernestdefoe-page-builder:
       reset_default: Reset to default
       reset_confirm: "Reset this template to the default? Your design is deleted and the built-in layout comes back. This can't be undone."
       reset_done: Template reset to the default.
+      using_default: "Showing the built-in layout. Add blocks to design your own."
       template_save_error: Could not save the template.
       saved: Saved
       saved_slug: "Saved — /page/{slug}"
