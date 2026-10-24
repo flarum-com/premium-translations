@@ -167,6 +167,16 @@ ernestdefoe-bespoke:
     layout_hero_contained: Contained
     layout_hero_full: Full width
     layout_hero_image: Hero background image (URL)
+    layout_hero_video: Video beside the welcome text (MP4 or WebM URL)
+    layout_hero_video_poster: Picture shown before it plays (URL)
+    layout_hero_video_label: Play button words
+    layout_hero_video_click: Play with sound on a click
+    layout_hero_video_loop: Loop silently
+    layout_hero_video_hint: >-
+      Sits on the right of the welcome banner and under the text on a phone. "Play with sound"
+      shows the picture and a play button, and loads the video only when someone presses it.
+      "Loop silently" starts by itself with no sound, for a short clip without a voice.
+    hero_video_watch: Watch the video
     layout_hero_dismiss: Hero dismissal
     layout_hero_dismissable: Dismissible
     layout_hero_locked: Always show
