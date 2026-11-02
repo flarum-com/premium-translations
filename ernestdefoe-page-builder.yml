@@ -446,6 +446,8 @@ ernestdefoe-page-builder:
       card_link: Link (the whole card becomes it)
       second_button: A second button
       second_button_default: Learn more
+      third_button: A third button
+      third_button_default: Contact us
       item_more: More for this item
 
     transfer:
