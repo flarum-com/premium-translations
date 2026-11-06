@@ -1,0 +1,76 @@
+justoverclock-next-shoutbox:
+  admin:
+    permissions:
+      view: View the shoutbox
+      post: Write in the shoutbox
+      moderate: Moderate the shoutbox (delete messages, mute users)
+    settings:
+      show_everywhere: Show on every page
+      show_everywhere_help: "On: a floating chat button appears on every page, and the box stays at the top of the home page. Off: the shoutbox only appears on the home page."
+      server_heading: Realtime server
+      server_help: Messages are delivered instantly through a small WebSocket server that ships with this extension. Start it from your Flarum folder and keep it running (for example with systemd, Supervisor or pm2).
+      server_options: "Options: --port=8090, --host=0.0.0.0, --cert=… --key=… to serve wss:// directly, -v to log every event. If the server isn't running the shoutbox still works and refreshes on a timer."
+      realtime_enabled: Use the realtime server
+      realtime_enabled_help: Turn off to rely on polling only.
+      ws_port: Server port
+      ws_port_help: Used by the command and by browsers when no public address is set.
+      ws_public_url: Public WebSocket address
+      ws_public_url_help: Where browsers connect. Leave empty for your forum's address on the port set above. Behind a reverse proxy use something like wss://forum.example.com/ws.
+      ws_internal_url: Internal address
+      ws_internal_url_help: How Flarum reaches the server to publish new messages. Defaults to http://127.0.0.1 on the port set above.
+      poll_interval: Fallback refresh interval (seconds)
+      poll_interval_help: How often browsers check for new messages when the realtime server can't be reached.
+      max_length: Maximum message length
+
+  api:
+    empty_message: The message can't be empty.
+
+  forum:
+    close: Close
+    title: Shoutbox
+    placeholder: "Say something… (type : for emoji)"
+    send: Send
+    sending: Sending…
+    failed: Not sent.
+    retry: Retry
+    discard: Discard
+    delete: Delete
+    delete_confirm: Delete this message?
+    mute: "Mute {username}"
+    unmute: "Unmute {username}"
+    mute_confirm: "Mute {username}? They'll still read the shoutbox but won't be able to write."
+    muted_alert: "{username} is muted in the shoutbox."
+    unmuted_alert: "{username} can write in the shoutbox again."
+    empty: No messages yet. Say hi!
+    beginning: This is the beginning of the shoutbox.
+    new_messages: "{count, plural, one {# new message} other {# new messages}}"
+    online: "{count} online"
+    others: "{count, plural, one {# other} other {# others}}"
+    typing: "{names} {count, plural, one {is} other {are}} typing"
+    typing_many: Several people are typing
+    guest_notice: Log in to join the conversation.
+    muted_notice: You've been muted in the shoutbox.
+    no_permission: You don't have permission to write here.
+    status:
+      live: Live
+      connecting: Connecting…
+      polling: Auto-refresh
+    errors:
+      "403": You're not allowed to write in the shoutbox.
+      "422": That message can't be sent.
+      "429": You're sending messages too quickly. Wait a moment.
+    emoji:
+      title: Emoji
+      search: Search emoji
+      none: No emoji found
+      hint: Shift-click to pick several
+      categories:
+        recent: Recently used
+        smileys: Smileys
+        people: People
+        nature: Nature
+        food: Food & drink
+        activity: Activities
+        travel: Travel & places
+        objects: Objects
+        symbols: Symbols & flags
