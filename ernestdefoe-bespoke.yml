@@ -6,6 +6,11 @@ ernestdefoe-bespoke:
     profile_solutions: "{count, plural, one {solution} other {solutions}}"
     profile_last_seen: Last seen
 
+    # ---- mark all as read ----
+    mark_all_read_title: Mark all as read
+    mark_all_read_confirm: Mark all as read
+    mark_all_read_cancel: Cancel
+
     # ---- reading aids ----
     to_top: Back to top
     toc: Contents
