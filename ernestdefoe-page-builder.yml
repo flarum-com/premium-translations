@@ -24,6 +24,9 @@ ernestdefoe-page-builder:
       edit_title: "Edit {name}"
       title_label: Title
       untitled: Untitled
+      slug_label: URL
+      slug_help: Changing the title doesn't change the URL. Edit it here; the old URL keeps working and sends visitors to the new one.
+      slug_help_new: Left empty, it's made from the title.
       category_label: Category
       category_none: — None —
       status_label: Status
@@ -763,6 +766,11 @@ ernestdefoe-page-builder:
       sort_newest: Newest first
       sort_oldest: Oldest first
       sort_title: Title
+      list_text: Listing text
+      list_text_auto: Summary, or start of body
+      list_text_summary: Summary only
+      list_text_none: None, just cover and title
+      list_text_help: 'What each card in the listing shows under its title. With "Summary only", a page with no summary shows none. Fields marked "in list" show either way.'
       per_page: Records per page
       moderate: Approve new submissions before they appear
       allow_comments: Allow comments on records
