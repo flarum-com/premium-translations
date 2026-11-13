@@ -193,6 +193,7 @@ ernestdefoe-bespoke:
     widgets_move_hint: Drag a widget onto the page, or drag it by its handle to move/reorder it.
     widgets_placed: Placed widgets (click to edit)
     widget_remove: Remove widget
+    widget_unavailable: This widget is hidden here for now (its extension turned it off for this page or this member).
     widget_hero: Hero banner
     widget_stats: Community stats
     widget_online: Online users
