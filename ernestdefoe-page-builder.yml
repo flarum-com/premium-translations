@@ -166,6 +166,7 @@ ernestdefoe-page-builder:
         depot_name: Downloads
         depot_kind: LIVE from Depot
         unknown: Unknown section
+      block_missing: "{type}: this block's extension is disabled, so the section is hidden on the page."
       live:
         stat_discussions: Discussions
         stat_posts: Posts
@@ -388,6 +389,11 @@ ernestdefoe-page-builder:
       delete_section: Delete section
       gallery_title: Add a section
       gallery_foot: Every section drops in styled to your forum — then tweak it.
+      blocks_extensions: Blocks from your extensions
+      blocks_core: Page Builder blocks
+      block_kind: A block, placed as a section
+      block_settings: Block settings
+      block_missing: "This block's extension ({type}) is disabled or missing, so this section is hidden on the page. Enable the extension again, or delete the section."
       articles_title: Publish a discussion as an article
       articles_new: Write a new article
       articles_new_sub: Start from a blank article in your theme
