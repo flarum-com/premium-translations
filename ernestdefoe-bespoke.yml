@@ -161,6 +161,8 @@ ernestdefoe-bespoke:
     layout_bg_image: Site background image (URL)
     layout_bg_hint: Sits behind the whole site. Pair with a translucent surface for a glassy look.
     layout_custom_css: Custom CSS
+    layout_custom_css_count: "{count} of {limit} characters"
+    layout_custom_css_too_long: "Custom CSS is {count} characters; the limit is {limit}. Shorten it to save the theme."
     layout_custom_css_hint: Advanced — your own CSS, injected last so it overrides everything.
     layout_density: Density
     layout_feed: Feed
@@ -320,6 +322,29 @@ ernestdefoe-bespoke:
     presets_imported: Theme imported — review and publish to go live
     presets_import_error: That file isn’t a valid Bespoke theme
 
+  api:
+    too_long: "{field} is {length} characters; the limit is {limit}. Nothing was saved."
+    too_many_widgets: "The {zone} zone has {count} widgets; the limit is {limit}. Nothing was saved."
+    too_many_links: "The footer has {count} links; the limit is {limit}. Nothing was saved."
+    document_too_large: "This theme is too large to save: {size} KB, and a theme can hold {limit} KB. Shorten the custom CSS or remove some widgets. Nothing was saved."
+    field:
+      css: Custom CSS
+      meta_name: The theme name
+      tokens_type_bodyFamily: The body font
+      tokens_type_headingFamily: The heading font
+      tokens_layout_cardCover: The default card cover address
+      tokens_layout_heroImage: The hero image address
+      tokens_layout_heroVideo: The hero video address
+      tokens_layout_heroVideoPoster: The hero video poster address
+      tokens_layout_heroVideoLabel: The hero video label
+      tokens_layout_bgImage: The background image address
+      announce_text: The announcement text
+      announce_link: The announcement link
+      footer_text: The footer text
+      footer_links_label: A footer link label
+      footer_links_url: A footer link address
+      footer_social: A social link
+      layout_zones_widget: A widget's text
   admin:
     default_preset: Default preset for new installs
     enable_theme: Apply the Bespoke theme to the forum
